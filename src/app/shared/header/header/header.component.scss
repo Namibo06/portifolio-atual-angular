@@ -1,0 +1,43 @@
+.active__link__header{
+    background-color: #0066ff !important;
+}
+
+/*header container*/
+.header__container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+    background-color: #2C2D32;
+    user-select: none;
+}
+
+.header__logo__work{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    color: #f8f8f8;
+}
+
+.header__work{
+    margin: 0px 60px;
+}
+
+.header__container nav > a > button{
+    width: 137px;
+    height: 45px;
+    border: 0;
+    border-radius: 5px;
+    font-size: 19px;
+    font-weight: bolder;
+    margin-right: 10px;
+    background-color: transparent;
+    cursor: pointer;
+    color: #f8f8f8;
+}
+
+.header__container nav > a > button:last-child{
+    margin-right: 0;
+}

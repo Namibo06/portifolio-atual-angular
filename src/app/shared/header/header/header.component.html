@@ -1,0 +1,29 @@
+<div class="header__container">
+    <div class="header__logo__work">
+        <div class="header__logo">
+            <h1>🚀 Joalisson P Maia</h1>
+        </div><!--header__logo-->
+    
+        <div class="header__work">
+            <h2>Web Developer</h2>
+        </div><!--header__work-->
+    </div><!--header__logo__work-->
+
+    <nav>
+        <a [routerLink]="['/home']" (click)="activedLink('home')">
+            <button type="button" [ngClass]="linkActive === 'home' ? 'active__link__header' : ''">HOME</button>
+        </a>
+
+        <a [routerLink]="'/projects'" (click)="activedLink('project')">
+            <button type="button" [ngClass]="linkActive === 'project' ? 'active__link__header' : ''">PROJETOS</button>
+        </a>
+
+        <a [routerLink]="'/faq'" (click)="activedLink('faq')">
+            <button type="button" [ngClass]="linkActive === 'faq' ? 'active__link__header' : ''">FAQ</button>
+        </a>
+
+        <a [routerLink]="'/about'" (click)="activedLink('about')">
+            <button type="button" [ngClass]="linkActive === 'about' ? 'active__link__header' : ''">SOBRE</button>
+        </a>
+    </nav>
+</div><!--header__container-->
