@@ -1,0 +1,86 @@
+.actived__step{
+    padding-bottom: 2px !important;
+    border-bottom: 3px solid #0066ff !important;
+    color: #0066ff !important;
+}
+
+/*aside*/
+main{
+    display: flex;
+    flex-direction: row;
+    user-select: none;
+}
+
+main > aside{
+    background-color: #d9d9d9;
+    height: 80.5vh;
+    width: 70px;
+}
+
+aside > button{
+    border: 0;
+    background-color: transparent;
+    margin-top: 25px;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+.home__wrapper{
+    overflow-y: auto;
+}
+
+.home__steps{
+    margin-top: 60px;
+    padding: 0 60px;
+}
+
+.home__steps > button{
+    background-color: transparent;
+    border: 0;
+    font-size: 20px;
+    font-weight: bolder;
+    color: #555;
+    margin-right: 50px;
+    cursor: pointer;
+}
+
+.home__steps > button:last-child{
+    margin-right: 0;
+}
+
+/*home search*/
+.home__search{
+    margin: 60px 0;
+    position: relative;
+    padding: 0 20px;
+    width: 800px;
+    max-width: 100%;
+}
+
+.home__search > input{
+    width: 800px;
+    max-width: 97%;
+    height: 40px;
+    padding: 0 15px;
+    border: 1px solid #222;
+    border-radius: 30px;
+    outline: 0;
+    font-size: 16px;
+}
+
+.home__search > input:focus{
+    border: 1px solid #0066ff;
+}
+
+.home__search > svg{
+    position: absolute;
+    right: 60px;
+    top: 5px;
+    cursor: pointer;
+}
+
+.home__search > svg:active{
+    top: 6px;
+}
+
+/*home content*/
