@@ -10,20 +10,20 @@
     </div><!--header__logo__work-->
 
     <nav>
-        <a [routerLink]="['/home']" (click)="activedLink('home')">
-            <button type="button" [ngClass]="linkActive === 'home' ? 'active__link__header' : ''">HOME</button>
+        <a [routerLink]="['/home']" routerLinkActive="active__link__header" (click)="activedLink('home')">
+            <button type="button">HOME</button>
         </a>
 
-        <a [routerLink]="'/projects'" (click)="activedLink('project')">
-            <button type="button" [ngClass]="linkActive === 'project' ? 'active__link__header' : ''">PROJETOS</button>
+        <a [routerLink]="['/projects']" routerLinkActive="active__link__header" (click)="activedLink('project')">
+            <button type="button" >PROJETOS</button>
         </a>
 
-        <a [routerLink]="'/faq'" (click)="activedLink('faq')">
-            <button type="button" [ngClass]="linkActive === 'faq' ? 'active__link__header' : ''">FAQ</button>
+        <a [routerLink]="['/faq']" routerLinkActive="active__link__header" (click)="activedLink('faq')">
+            <button type="button" >FAQ</button>
         </a>
 
-        <a [routerLink]="'/about'" (click)="activedLink('about')">
-            <button type="button" [ngClass]="linkActive === 'about' ? 'active__link__header' : ''">SOBRE</button>
+        <a [routerLink]="['/about']" routerLinkActive="active__link__header" (click)="activedLink('about')">
+            <button type="button">SOBRE</button>
         </a>
     </nav>
 </div><!--header__container-->
