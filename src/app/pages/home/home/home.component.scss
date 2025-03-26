@@ -114,6 +114,12 @@ aside > .home__social__media > .home__social__media__single{
     top: 6px;
 }
 
+.home__search > p{
+    position: absolute;
+    bottom: -50px;
+    left: 60px;
+}
+
 /*home content*/
 .home__content{
     margin: 90px 20px 20px 20px;
@@ -127,7 +133,8 @@ aside > .home__social__media > .home__social__media__single{
 }
 
 /*home all content*/
-.home__all__content > h2{
+.home__all__template > h2,
+.home__blog__template > h2{
     font-size: 20px;
     font-weight: 600;
     color: #444444;
@@ -135,92 +142,9 @@ aside > .home__social__media > .home__social__media__single{
 }
 
 .home__article__single{
-    border-radius: 5px;
-    border: 1px solid #a39999;
-    width: 950px;
-    max-width: 99%;
-    height: 214px;
-    display: flex;
-    flex-direction: row;
     margin-bottom: 30px;
 }
 
 .home__article__single:last-child{
-    margin-bottom: 0;
-}
-
-.home__article__single > picture{
-    min-width: 340px;
-    min-height: 212px;
-}
-
-.home__article__single > picture > img{
-    width: 100%;
-    height: 100%;
-    border-radius: 5px;
-    border-right: 1px solid #a39999;
-    object-fit: cover;
-}
-
-.home__article__single__content{
-    padding: 15px 20px;
-    position: relative;
-}
-
-.home__article__single__types{
-    display: flex;
-    flex-direction: row;
-}
-
-.home__article__single__types > .article__type{
-    width: 120px;
-    background-color: #d9d9d9;
-    text-align: center;
-    border-radius: 30px;
-    margin-right: 10px;
-    padding: 5px 0;
-}
-
-.home__article__single__types > .article__type:last-child{
-    margin-right: 0;
-}
-
-.article__type > p{
-    font-size: 14px;
-    font-weight: 600;
-    color: #222;
-}
-
-.home__article__single__content > h2{
-    font-size: 18px;
-    font-weight: 500;
-    letter-spacing: 1%;
-    color: #333;
-    padding-top: 15px;
-}
-
-.home__article__single__content > p{
-    line-height: 20px;
-    padding-top: 10px;
-    font-size: 14px;
-}
-
-.home__article__single__content > .btn__read__more{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    position: absolute;
-    right: 25px;
-    bottom: 10px;
-    cursor: pointer;
-}
-
-.btn__read__more > h4{
-    font-size: 16px;
-    font-weight: 500;
-}
-
-.btn__read__more > svg{
-    position: relative;
-    top: 1px;
+    margin-bottom: 0px;
 }
