@@ -8,6 +8,7 @@ import { AboutModule } from './pages/about/about.module';
 import { ProjectModule } from './pages/project/project.module';
 import { FaqModule } from './pages/faq/faq.module';
 import { HeaderModule } from './shared/header/header.module';
+import { CardTemplateModule } from './components/card-template/card-template.module';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { HeaderModule } from './shared/header/header.module';
     AboutModule,
     ProjectModule,
     FaqModule,
-    HeaderModule
+    HeaderModule,
+    CardTemplateModule
   ],
   providers: [],
   bootstrap: [AppComponent]
