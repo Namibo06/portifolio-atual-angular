@@ -1,14 +1,14 @@
-import { Component, OnInit } from '@angular/core';
+import { AfterViewInit, Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
   styleUrl: './header.component.scss'
 })
-export class HeaderComponent implements OnInit{
+export class HeaderComponent implements AfterViewInit{
   linkActive: string = ""; 
 
-  ngOnInit(): void {
+  ngAfterViewInit(): void {
     this.activedLink('home');
   }
 
