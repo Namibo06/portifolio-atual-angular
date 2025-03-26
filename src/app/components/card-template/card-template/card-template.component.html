@@ -5,7 +5,7 @@
 
     <div class="home__article__single__content">
         <div class="home__article__single__types">
-            <div class="article__type" *ngFor="let type of typeNameCard">
+            <div class="article__type" *ngFor="let type of typeNameCard" [ngStyle]="{'width': (type.type_name.length * 14) + 'px'}">
                 <p>{{ type.type_name }}</p>
             </div><!--article__type-->
         </div><!--home__article__single__types-->
