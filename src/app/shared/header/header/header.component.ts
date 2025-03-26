@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-header',
@@ -7,9 +6,7 @@ import { Router } from '@angular/router';
   styleUrl: './header.component.scss'
 })
 export class HeaderComponent implements OnInit{
-  linkActive: string = "";
-
-  constructor(private router: Router) {} 
+  linkActive: string = ""; 
 
   ngOnInit(): void {
     this.activedLink('home');
@@ -17,6 +14,5 @@ export class HeaderComponent implements OnInit{
 
   activedLink(nameLink: string){
     this.linkActive = nameLink;
-
   }
 }
