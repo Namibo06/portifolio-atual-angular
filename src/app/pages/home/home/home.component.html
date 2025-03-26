@@ -80,7 +80,6 @@
             <div class="home__content">
                 <section class="home__all__template" #templateAll id="templateAll">
                     <h2>CONTEÚDOS MAIS RECENTES</h2>
-
                     <div class="home__all__template__articles">
                         <article class="home__article__single" *ngFor="let post of allPosts">
                             <app-card-template [dataApi]="post"></app-card-template>
@@ -90,7 +89,6 @@
 
                 <section class="home__blog__template" #templateBlog id="templateBlog">
                     <h2>ÚLTIMOS ARTIGOS</h2>
-
                     <div class="home__all__template__articles">
                         <article class="home__article__single" *ngFor="let article of blog">
                             <app-card-template [dataApi]="article"></app-card-template>
