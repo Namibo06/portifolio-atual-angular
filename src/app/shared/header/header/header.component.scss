@@ -2,6 +2,10 @@
     background-color: #0066ff !important;
 }
 
+.active__link__header > button{
+    color: #fff !important;
+}
+
 /*header container*/
 .header__container{
     display: flex;
@@ -9,16 +13,20 @@
     justify-content: space-between;
     align-items: center;
     padding: 40px;
-    background-color: #2C2D32;
+    background-color: #F8F8F8;
     user-select: none;
+    color: #222222;
+    border-left: 1px solid #a39999;
+    border-right: 1px solid #a39999;
+    border-bottom: 1px solid #a39999;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
 }
 
-.header__logo__work{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    color: #f8f8f8;
+.header__logo > h1,
+.header__work > h2{
+    font-size: 24px;
+    letter-spacing: 1%;
 }
 
 .header__work{
@@ -37,10 +45,11 @@
     border-radius: 5px;
     font-size: 19px;
     font-weight: bolder;
+    letter-spacing: 1%;
     margin-right: 10px;
     background-color: transparent;
     cursor: pointer;
-    color: #f8f8f8;
+    color: #222222;
 }
 
 .header__container nav > a > button:last-child{
