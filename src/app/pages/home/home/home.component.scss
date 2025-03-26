@@ -9,20 +9,53 @@ main{
     display: flex;
     flex-direction: row;
     user-select: none;
+    padding: 0 15px;
+    min-height: 110vh;
 }
 
 main > aside{
-    background-color: #d9d9d9;
+    position: relative;
+    top: 20px;
+    background-color: #f8f8f8;
     height: 80.5vh;
-    width: 70px;
+    width: 270px;
+    height: 670px;
+    border: 1px solid #a39999;
+    border-radius: 20px;
 }
 
-aside > button{
+aside > picture > .home__perfil{
+    position: relative;
+    top: 20px;
+    margin: 0 auto;
+    width: 203px;
+    height: 203px;
+    background-color: #d9d9d9d9;
+    border-radius: 50%;
+}
+
+aside > p{
+   padding: 0px 10px;
+   margin-top: 40px;
+   font-weight: 300;
+   text-align: left;
+   word-wrap: break-word;
+   line-height: 20px;
+}
+
+aside > .home__social__media{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px 20px 0 20px;
+}
+
+aside > .home__social__media > .home__social__media__single{
+    width: 45px;
+    height: 45px;
+    border-radius: 5px;
     border: 0;
-    background-color: transparent;
-    margin-top: 25px;
-    margin-left: 5px;
-    cursor: pointer;
+    background-color: #d9d9d9;
 }
 
 .home__wrapper{
@@ -62,7 +95,7 @@ aside > button{
     max-width: 97%;
     height: 40px;
     padding: 0 15px;
-    border: 1px solid #222;
+    border: 1px solid #a39999;
     border-radius: 30px;
     outline: 0;
     font-size: 16px;
@@ -84,3 +117,6 @@ aside > button{
 }
 
 /*home content*/
+.home__article__single__content{
+    width: 400px;
+}
