@@ -12,6 +12,17 @@
     min-width: 340px;
     max-width: 340px;
     min-height: 212px;
+    position: relative;
+}
+
+.card__tiktok__overlay_img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #05050523;
+    border-radius: 5px;
+    width: 340px;
+    height: 212px;
 }
 
 .card__template__container > picture > img{
@@ -70,7 +81,7 @@
     align-items: center;
     position: absolute;
     right: 25px;
-    bottom: 10px;
+    bottom: 20px;
     cursor: pointer;
     text-decoration: none;
 }
