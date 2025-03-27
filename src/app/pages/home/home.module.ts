@@ -5,6 +5,7 @@ import { HomeComponent } from './home/home.component';
 import { FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 import { CardTemplateModule } from '../../components/card-template/card-template.module';
+import { CardTiktokTemplateModule } from '../../components/card-tiktok-template/card-tiktok-template.module';
 
 
 
@@ -16,7 +17,8 @@ import { CardTemplateModule } from '../../components/card-template/card-template
     HeaderModule,
     FormsModule,
     RouterModule,
-    CardTemplateModule
+    CardTemplateModule,
+    CardTiktokTemplateModule
   ]
 })
 export class HomeModule { }
