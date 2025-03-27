@@ -10,6 +10,7 @@ import { FaqModule } from './pages/faq/faq.module';
 import { HeaderModule } from './shared/header/header.module';
 import { CardTemplateModule } from './components/card-template/card-template.module';
 import { CardTiktokTemplateModule } from './components/card-tiktok-template/card-tiktok-template.module';
+import { AboutMeModule } from './components/about-me/about-me.module';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { CardTiktokTemplateModule } from './components/card-tiktok-template/card
     FaqModule,
     HeaderModule,
     CardTemplateModule,
-    CardTiktokTemplateModule
+    CardTiktokTemplateModule,
+    AboutMeModule
   ],
   providers: [],
   bootstrap: [AppComponent]

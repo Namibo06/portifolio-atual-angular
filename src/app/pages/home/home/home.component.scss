@@ -24,38 +24,6 @@ main > aside{
     border-radius: 20px;
 }
 
-aside > picture > img{
-    position: relative;
-    top: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 223px;
-    height: 223px;
-    border-radius: 50%;
-    object-fit: cover;
-}
-
-aside > p{
-   padding: 0px 12px;
-   margin-top: 40px;
-   font-weight: 300;
-   text-align: left;
-   word-wrap: break-word;
-   line-height: 22px;
-}
-
-aside > .home__social__media{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 30px 0 30px;
-}
-
-aside > .home__social__media > .home__social__media__single{
-    cursor: pointer;
-}
-
 .home__wrapper{
     overflow-y: auto;
 }
