@@ -115,16 +115,54 @@ export class HomeComponent implements OnInit, AfterViewInit{
     },
     {
       id: "4",
-      image_url: "html-css-javascript.webp",
+      image_url: "barbx.jpg",
       types: [
         { id: "1", type_name: "HTML" },
         { id: "2", type_name: "CSS" },
-        { id: "3", type_name: "JAVASCRIPT" }
+        { id: "3", type_name: "JavaScript" }
       ],
       title: "Barbx",
       description: "Recentemente, percebi que o pessoal de T.I tem uma breve dificuldade em começar a programar, então sempre recomendo a todos, a primeiro entender como funciona a internet e também como funciona HTML, CSS e JavaScript...",
       nameToPost: "Ver projeto"
-    }
+    },
+    {
+      id: "5",
+      image_url: "barbx.jpg",
+      types: [
+        { id: "1", type_name: "Node.js" },
+        { id: "2", type_name: "Express.js" },
+        { id: "3", type_name: "Sequelize" },
+        { id: "4", type_name: "MySQL" }
+      ],
+      title: "Gerenciador para um hotel canino",
+      description: "Recentemente, percebi que o pessoal de T.I tem uma breve dificuldade em começar a programar, então sempre recomendo a todos, a primeiro entender como funciona a internet e também como funciona HTML, CSS e JavaScript...",
+      nameToPost: "Ver projeto"
+    },
+    {
+      id: "6",
+      image_url: "barbx.jpg",
+      types: [
+        { id: "1", type_name: "Java" },
+        { id: "2", type_name: "Kafka" },
+        { id: "3", type_name: "SpringBoot" },
+        { id: "4", type_name: "MySQL" },
+      ],
+      title: "E-commerce com pagamento",
+      description: "Recentemente, percebi que o pessoal de T.I tem uma breve dificuldade em começar a programar, então sempre recomendo a todos, a primeiro entender como funciona a internet e também como funciona HTML, CSS e JavaScript...",
+      nameToPost: "Ver projeto"
+    },
+    {
+      id: "7",
+      image_url: "setup.png",
+      types: [
+        { id: "1", type_name: "Vscode" },
+        { id: "2", type_name: "Git" },
+        { id: "3", type_name: "MySQL" },
+      ],
+      title: "Instalando Ambiente de Desenvolvimento",
+      description: "Recentemente, percebi que o pessoal de T.I tem uma breve dificuldade em começar a programar, então sempre recomendo a todos, a primeiro entender como funciona a internet e também como funciona HTML, CSS e JavaScript...",
+      nameToPost: "Ver video"
+    },
   ];  
 
   blog = [
@@ -162,31 +200,59 @@ export class HomeComponent implements OnInit, AfterViewInit{
     },
   ];
 
-  project = {
-    0: {
+  project = [
+    {
       id: "1",
-      image_url: "html-css-javascript.webp",
-      types: {
-        0: {
-          id: "1",
-          type_name: "HTML"
-        },
-        1: {
-          id: "2",
-          type_name: "CSS"
-        },
-        2: {
-          id: "3",
-          type_name: "JAVASCRIPT"
-        }
-      },
+      image_url: "barbx.jpg",
+      types: [
+        { id: "1", type_name: "HTML" },
+        { id: "2", type_name: "CSS" },
+        { id: "3", type_name: "JavaScript" }
+      ],
       title: "Barbx",
       description: "Recentemente, percebi que o pessoal de T.I tem uma breve dificuldade em começar a programar, então sempre recomendo a todos, a primeiro entender como funciona a internet e também como funciona HTML, CSS e JavaScript...",
       nameToPost: "Ver projeto"
     },
-  }
+    {
+      id: "2",
+      image_url: "barbx.jpg",
+      types: [
+        { id: "1", type_name: "Node.js" },
+        { id: "2", type_name: "Express.js" },
+        { id: "3", type_name: "Sequelize" },
+        { id: "4", type_name: "MySQL" }
+      ],
+      title: "Gerenciador para um hotel canino",
+      description: "Recentemente, percebi que o pessoal de T.I tem uma breve dificuldade em começar a programar, então sempre recomendo a todos, a primeiro entender como funciona a internet e também como funciona HTML, CSS e JavaScript...",
+      nameToPost: "Ver projeto"
+    },
+    {
+      id: "3",
+      image_url: "barbx.jpg",
+      types: [
+        { id: "1", type_name: "Java" },
+        { id: "2", type_name: "Kafka" },
+        { id: "3", type_name: "SpringBoot" },
+        { id: "4", type_name: "MySQL" },
+      ],
+      title: "E-commerce com pagamento",
+      description: "Recentemente, percebi que o pessoal de T.I tem uma breve dificuldade em começar a programar, então sempre recomendo a todos, a primeiro entender como funciona a internet e também como funciona HTML, CSS e JavaScript...",
+      nameToPost: "Ver projeto"
+    },
+  ];
 
-  tiktok = {
-
-  }
+  tiktok = [
+    {
+      id: "1",
+      image_url: "setup.png",
+      types: [
+        { id: "1", type_name: "Vscode" },
+        { id: "2", type_name: "Git" },
+        { id: "3", type_name: "MySQL" },
+      ],
+      title: "Instalando Ambiente de Desenvolvimento",
+      description: "Recentemente, percebi que o pessoal de T.I tem uma breve dificuldade em começar a programar, então sempre recomendo a todos, a primeiro entender como funciona a internet e também como funciona HTML, CSS e JavaScript...",
+      nameToPost: "Ver video"
+    }
+  ];
 }
