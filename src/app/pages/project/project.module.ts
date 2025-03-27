@@ -6,6 +6,7 @@ import { ProjectComponent } from './project/project.component';
 import { HeaderModule } from '../../shared/header/header.module';
 import { AboutMeModule } from '../../components/about-me/about-me.module';
 import { CardTemplateModule } from '../../components/card-template/card-template.module';
+import { RelevantArticlesModule } from '../../components/relevant-articles/relevant-articles.module';
 
 
 
@@ -18,7 +19,8 @@ import { CardTemplateModule } from '../../components/card-template/card-template
     FormsModule,
     HeaderModule,
     AboutMeModule,
-    CardTemplateModule
+    CardTemplateModule,
+    RelevantArticlesModule
   ]
 })
 export class ProjectModule { }

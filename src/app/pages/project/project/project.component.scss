@@ -11,45 +11,11 @@ main > aside{
     position: relative;
     top: 20px;
     background-color: #f8f8f8;
-    height: 80.5vh;
+    height: 90vh;
     width: 330px;
-    height: 670px;
     border: 1px solid #a39999;
     border-radius: 20px;
     padding: 30px 20px;
-}
-
-aside > h2{
-    font-size: 19px;
-    font-weight: 500;
-    color: #444;
-}
-
-.article__wrapper{
-    padding-top: 30px;
-}
-
-.article__card__single{
-    display: block;
-    margin-bottom: 20px;
-    text-decoration: none;
-}
-
-.article__card__single:last-child{
-    margin-bottom: 0;
-}
-
-.article__title{
-    font-size: 19px;
-    font-weight: 500;
-    color: #222;
-}
-
-.article__description{
-    font-size: 15px;
-    font-weight: 400;
-    padding-top: 7px;
-    color: #444;
 }
 
 /*home search*/
