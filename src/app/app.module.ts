@@ -9,6 +9,7 @@ import { ProjectModule } from './pages/project/project.module';
 import { FaqModule } from './pages/faq/faq.module';
 import { HeaderModule } from './shared/header/header.module';
 import { CardTemplateModule } from './components/card-template/card-template.module';
+import { CardTiktokTemplateModule } from './components/card-tiktok-template/card-tiktok-template.module';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { CardTemplateModule } from './components/card-template/card-template.mod
     ProjectModule,
     FaqModule,
     HeaderModule,
-    CardTemplateModule
+    CardTemplateModule,
+    CardTiktokTemplateModule
   ],
   providers: [],
   bootstrap: [AppComponent]
