@@ -1,0 +1,32 @@
+.relevant__articles__container > h2{
+    font-size: 19px;
+    font-weight: 500;
+    color: #444;
+}
+
+.article__wrapper{
+    padding-top: 30px;
+}
+
+.article__card__single{
+    display: block;
+    margin-bottom: 22px;
+    text-decoration: none;
+}
+
+.article__card__single:last-child{
+    margin-bottom: 0;
+}
+
+.article__title > h3{
+    font-size: 19px;
+    font-weight: 600;
+    color: #222;
+}
+
+.article__description{
+    font-size: 15px;
+    font-weight: 400;
+    padding-top: 7px;
+    color: #444;
+}

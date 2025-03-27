@@ -11,6 +11,7 @@ import { HeaderModule } from './shared/header/header.module';
 import { CardTemplateModule } from './components/card-template/card-template.module';
 import { CardTiktokTemplateModule } from './components/card-tiktok-template/card-tiktok-template.module';
 import { AboutMeModule } from './components/about-me/about-me.module';
+import { RelevantArticlesModule } from './components/relevant-articles/relevant-articles.module';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { AboutMeModule } from './components/about-me/about-me.module';
     HeaderModule,
     CardTemplateModule,
     CardTiktokTemplateModule,
-    AboutMeModule
+    AboutMeModule,
+    RelevantArticlesModule
   ],
   providers: [],
   bootstrap: [AppComponent]
