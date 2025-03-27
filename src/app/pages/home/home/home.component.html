@@ -10,7 +10,7 @@
             </picture>
 
             <p>
-                Olá, tudo bem? Você já deve ter me visto por aí, mas não custa me apresentar novamente, me chamo Joalisson, tenho 21 anos, sou formado em ADS, e estou no 3° semestre em SI, sou um desenvolvedor Web Full Stack, atuo no Front-end principalmente com Angular e Vue, e no Back-end PHP, Node e Java, possuo conhecimentos em bancos relacionais e não relacionais, e algo bem importante é que uso Java e Ionic no desenvolvimento mobile.
+                Olá, tudo bem? Você já deve ter me visto por aí, mas não custa me apresentar novamente, me chamo Joalisson, tenho 21 anos, sou formado em ADS, e estou no 3° semestre em SI, sou um desenvolvedor Web Full Stack, atuo no Front-end principalmente com Angular e Vue, e no Back-end PHP, Node e Java, possuo conhecimentos em bancos de dados relacionais e não relacionais, e algo bem importante é que utilizo Java e Ionic no desenvolvimento mobile.
             </p>
 
             <div class="home__social__media">
@@ -79,28 +79,44 @@
 
             <div class="home__content">
                 <section class="home__all__template" #templateAll id="templateAll">
-                    <h2>CONTEÚDOS MAIS RECENTES</h2>
+                    <h2>TODOS CONTEÚDOS</h2>
                     <div class="home__all__template__articles">
                         <article class="home__article__single" *ngFor="let post of allPosts">
                             <app-card-template [dataApi]="post"></app-card-template>
                         </article><!--home__article__single-->
+
+                        @if (allPosts.length >= 10) {
+                            <button type="button">VER MAIS</button>
+                        }
                     </div><!--home__all__template_articles-->
                 </section><!--home__all__template-->
 
                 <section class="home__blog__template" #templateBlog id="templateBlog">
                     <h2>ÚLTIMOS ARTIGOS</h2>
-                    <div class="home__all__template__articles">
+                    <div class="home__blog__template__articles">
                         <article class="home__article__single" *ngFor="let article of blog">
                             <app-card-template [dataApi]="article"></app-card-template>
                         </article><!--home__article__single-->
-                    </div><!--home__all__template_articles-->
-                </section>
-                <section class="home__project__content" #templateProject id="templateProject">
-                    <p>Projeto</p>
-                </section>
-                <section class="home__youtube__content" #templateTiktok id="templateTiktok">
-                    <p>Tiktok</p>
-                </section>
+                    </div><!--home__blog__template__articles-->
+                </section><!--home__blog__template-->
+
+                <section class="home__project__template" #templateProject id="templateProject">
+                    <h2>PROJETOS MAIS RECENTES</h2>
+                    <div class="home__project__template__articles">
+                        <article class="home__article__single" *ngFor="let post of project">
+                            <app-card-template [dataApi]="post"></app-card-template>
+                        </article><!--home__article__single-->
+                    </div><!--home__project__template__articles-->
+                </section><!--home__project__template-->
+
+                <section class="home__tiktok__template" #templateTiktok id="templateTiktok">
+                    <h2>VIDEOS MAIS RECENTES</h2>
+                    <div class="home__project__template__articles">
+                        <article class="home__article__single" *ngFor="let video of tiktok">
+                            <app-card-tiktok-template [dataApi]="video"></app-card-tiktok-template>
+                        </article><!--home__article__single-->
+                    </div><!--home__project__template__articles-->
+                </section><!--home__tiktok__template-->
             </div><!--home__content-->
         </div><!--home_wrapper-->
     </main>

@@ -134,11 +134,25 @@ aside > .home__social__media > .home__social__media__single{
 
 /*home all content*/
 .home__all__template > h2,
-.home__blog__template > h2{
+.home__blog__template > h2,
+.home__project__template > h2,
+.home__tiktok__template > h2{
     font-size: 20px;
     font-weight: 600;
     color: #444444;
     margin-bottom: 50px;
+}
+
+.home__content > section > div > button{
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 19px;
+    font-weight: 500;
+    color: #444;
+    cursor: pointer;
+    border: 0;
+    background-color: transparent;
 }
 
 .home__article__single{
