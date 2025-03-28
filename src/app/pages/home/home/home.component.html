@@ -10,15 +10,15 @@
 
         <div class="home__wrapper">
             <section class="home__steps">
-                <button type="button" [ngClass]="stepActive === 'all' ? 'actived__step' : ''" (click)="activeStep('all')">TODOS</button>
-                <button type="button" [ngClass]="stepActive === 'blog' ? 'actived__step' : ''"  (click)="activeStep('blog')">BLOG</button>
-                <button type="button" [ngClass]="stepActive === 'project' ? 'actived__step' : ''"  (click)="activeStep('project')">PROJETOS</button>
-                <button type="button" [ngClass]="stepActive === 'tiktok' ? 'actived__step' : ''"  (click)="activeStep('tiktok')">TIKTOK</button>
+                <button type="button" [ngClass]="stepActive === 'all' ? 'actived__step' : ''" (click)="activeStep('all')" title="Todos">TODOS</button>
+                <button type="button" [ngClass]="stepActive === 'blog' ? 'actived__step' : ''"  (click)="activeStep('blog')" title="Blog">BLOG</button>
+                <button type="button" [ngClass]="stepActive === 'project' ? 'actived__step' : ''"  (click)="activeStep('project')" title="Projetos">PROJETOS</button>
+                <button type="button" [ngClass]="stepActive === 'tiktok' ? 'actived__step' : ''"  (click)="activeStep('tiktok')" title="TikTok">TIKTOK</button>
             </section><!--home__steps-->
 
             <section class="home__search">
-                <input type="text" name="contentInput" [(ngModel)]="contentInput">
-                <svg (click)="findBySearch()" width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <input type="text" name="contentInput" [(ngModel)]="contentInput" title="Caixa de Pesquisa">
+                <svg (click)="findBySearch()" title="Ícone de Pesquisa" width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                     <rect width="30" height="30" fill="url(#pattern0_23_194)"/>
                     <defs>
                     <pattern id="pattern0_23_194" patternContentUnits="objectBoundingBox" width="1" height="1">
@@ -29,7 +29,7 @@
                 </svg>  
 
                 @if (searchContent !== "") {
-                    <p>{{ searchFoundLength }} resultados encontrados para a busca "{{ searchContent }}"</p>
+                    <p title="Resultado">{{ searchFoundLength }} resultados encontrados para a busca "{{ searchContent }}"</p>
                 }
             </section><!--home__search-->
 

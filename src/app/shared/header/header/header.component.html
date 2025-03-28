@@ -1,26 +1,26 @@
 <div class="header__container">
     <div class="header__logo">
-        <h1>🚀 Joalisson P Maia</h1>
+        <h1 title="Joalisson P. Maia">🚀 Joalisson P. Maia</h1>
     </div><!--header__logo-->
 
     <div class="header__work">
-        <h2>Web Developer</h2>
+        <h2 title="Web Developer">Web Developer</h2>
     </div><!--header__work-->
 
     <nav>
-        <a [routerLink]="['/home']" routerLinkActive="active__link__header" (click)="activedLink('home')">
+        <a [routerLink]="['/home']" routerLinkActive="active__link__header" (click)="activedLink('home')" title="Rota para Página Principal">
             <button type="button">HOME</button>
         </a>
 
-        <a [routerLink]="['/projetos']" routerLinkActive="active__link__header" (click)="activedLink('project')">
+        <a [routerLink]="['/projetos']" routerLinkActive="active__link__header" (click)="activedLink('project')" title="Rota para Página de Projetos">
             <button type="button">PROJETOS</button>
         </a>
 
-        <a [routerLink]="['/faq']" routerLinkActive="active__link__header" (click)="activedLink('faq')">
+        <a [routerLink]="['/faq']" routerLinkActive="active__link__header" (click)="activedLink('faq')" title="Rota para Página de FAQs">
             <button type="button">FAQ</button>
         </a>
 
-        <a [routerLink]="['/sobre']" routerLinkActive="active__link__header" (click)="activedLink('about')">
+        <a [routerLink]="['/sobre']" routerLinkActive="active__link__header" (click)="activedLink('about')" title="Rota para Página Sobre">
             <button type="button">SOBRE</button>
         </a>
     </nav>

@@ -11,12 +11,12 @@
         <div class="faq__wrapper">
             <section class="faq__search">
                 <div class="faq__back__page">
-                    <svg onclick="return history.back()" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M13.2328 16.4569C12.9328 16.7426 12.9212 17.2173 13.2069 17.5172C13.4926 17.8172 13.9673 17.8288 14.2672 17.5431L13.2328 16.4569ZM19.5172 12.5431C19.8172 12.2574 19.8288 11.7827 19.5431 11.4828C19.2574 11.1828 18.7827 11.1712 18.4828 11.4569L19.5172 12.5431ZM18.4828 12.5431C18.7827 12.8288 19.2574 12.8172 19.5431 12.5172C19.8288 12.2173 19.8172 11.7426 19.5172 11.4569L18.4828 12.5431ZM14.2672 6.4569C13.9673 6.17123 13.4926 6.18281 13.2069 6.48276C12.9212 6.78271 12.9328 7.25744 13.2328 7.5431L14.2672 6.4569ZM19 12.75C19.4142 12.75 19.75 12.4142 19.75 12C19.75 11.5858 19.4142 11.25 19 11.25V12.75ZM5 11.25C4.58579 11.25 4.25 11.5858 4.25 12C4.25 12.4142 4.58579 12.75 5 12.75V11.25ZM14.2672 17.5431L19.5172 12.5431L18.4828 11.4569L13.2328 16.4569L14.2672 17.5431ZM19.5172 11.4569L14.2672 6.4569L13.2328 7.5431L18.4828 12.5431L19.5172 11.4569ZM19 11.25L5 11.25V12.75L19 12.75V11.25Z" fill="#222"></path> </g></svg>  
+                    <svg onclick="return history.back()" title="Voltar Página" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M13.2328 16.4569C12.9328 16.7426 12.9212 17.2173 13.2069 17.5172C13.4926 17.8172 13.9673 17.8288 14.2672 17.5431L13.2328 16.4569ZM19.5172 12.5431C19.8172 12.2574 19.8288 11.7827 19.5431 11.4828C19.2574 11.1828 18.7827 11.1712 18.4828 11.4569L19.5172 12.5431ZM18.4828 12.5431C18.7827 12.8288 19.2574 12.8172 19.5431 12.5172C19.8288 12.2173 19.8172 11.7426 19.5172 11.4569L18.4828 12.5431ZM14.2672 6.4569C13.9673 6.17123 13.4926 6.18281 13.2069 6.48276C12.9212 6.78271 12.9328 7.25744 13.2328 7.5431L14.2672 6.4569ZM19 12.75C19.4142 12.75 19.75 12.4142 19.75 12C19.75 11.5858 19.4142 11.25 19 11.25V12.75ZM5 11.25C4.58579 11.25 4.25 11.5858 4.25 12C4.25 12.4142 4.58579 12.75 5 12.75V11.25ZM14.2672 17.5431L19.5172 12.5431L18.4828 11.4569L13.2328 16.4569L14.2672 17.5431ZM19.5172 11.4569L14.2672 6.4569L13.2328 7.5431L18.4828 12.5431L19.5172 11.4569ZM19 11.25L5 11.25V12.75L19 12.75V11.25Z" fill="#222"></path> </g></svg>  
                 </div><!--faq__back__page-->
 
                 <div class="faq__search__wrapper">
-                    <input type="text" name="contentInput" [(ngModel)]="contentInput">
-                    <svg (click)="findBySearch()" width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <input type="text" name="contentInput" [(ngModel)]="contentInput" id="Caixa de Pesquisa">
+                    <svg (click)="findBySearch()" title="Ícone de Pesquisa" width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                         <rect width="30" height="30" fill="url(#pattern0_23_194)"/>
                         <defs>
                         <pattern id="pattern0_23_194" patternContentUnits="objectBoundingBox" width="1" height="1">
@@ -27,7 +27,7 @@
                     </svg>  
     
                     @if (searchContent !== "") {
-                        <p>{{ searchFoundLength }} resultados encontrados para a busca "{{ searchContent }}"</p>
+                        <p title="Resultado">{{ searchFoundLength }} resultados encontrados para a busca "{{ searchContent }}"</p>
                     }
                 </div><!--faq__search__wrapper-->
             </section><!--faq__search-->
@@ -35,18 +35,18 @@
             <section class="faqs">
                 <div class="faq__single" *ngFor="let faq of faqData">
                     <div class="faq__single__title" (click)="showHideFaqContent(faq.id)">
-                        <h3>{{ faq.title }}</h3>
+                        <h3 title="Titulo">{{ faq.title }}</h3>
                         <button type="button" *ngIf="!openFaqs[faq.id]">
-                            <svg viewBox="0 0 1024 1024" fill="#000000" class="icon" version="1.1" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path d="M512 980c-12.8 0-24-11.2-24-24V536H67.2c-12.8 0-24-11.2-24-24s10.4-24 24-24H488V67.2c0-12.8 11.2-24 24-24s24 10.4 24 24V488h420c12.8 0 24 11.2 24 24s-10.4 24-24 24H536v420c0 12.8-11.2 24-24 24z" fill=""></path></g></svg>
+                            <svg title="Ícone de Abrir" viewBox="0 0 1024 1024" fill="#000000" class="icon" version="1.1" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path d="M512 980c-12.8 0-24-11.2-24-24V536H67.2c-12.8 0-24-11.2-24-24s10.4-24 24-24H488V67.2c0-12.8 11.2-24 24-24s24 10.4 24 24V488h420c12.8 0 24 11.2 24 24s-10.4 24-24 24H536v420c0 12.8-11.2 24-24 24z" fill=""></path></g></svg>
                         </button>
 
                         <button type="button" *ngIf="openFaqs[faq.id]">
-                            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <defs> <style>.c{fill:none;stroke:#222;stroke-linecap:round;stroke-linejoin:round;}</style> </defs> <g id="a"></g> <g id="b"> <line class="c" x1="3.5" x2="20.5" y1="12" y2="12"></line> </g> </g></svg>
+                            <svg title="Ícone de Fechar" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <defs> <style>.c{fill:none;stroke:#222;stroke-linecap:round;stroke-linejoin:round;}</style> </defs> <g id="a"></g> <g id="b"> <line class="c" x1="3.5" x2="20.5" y1="12" y2="12"></line> </g> </g></svg>
                         </button>
                     </div><!--faq__single__title-->
 
                     <div class="faq__single__content" *ngIf="openFaqs[faq.id]">
-                        <p>{{ faq.description }}</p>
+                        <p title="Descrição">{{ faq.description }}</p>
                     </div><!--faq__single__content-->
                 </div><!--faq__single-->
             </section><!--faqs-->
