@@ -34,14 +34,14 @@
 
             <section class="faqs">
                 <div class="faq__single" *ngFor="let faq of faqData">
-                    <div class="faq__single__title">
+                    <div class="faq__single__title" (click)="showHideFaqContent(faq.id)">
                         <h3>{{ faq.title }}</h3>
-                        <button type="button" *ngIf="!openFaqs[faq.id]" (click)="showHideFaqContent(faq.id)">
-                            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <rect width="24" height="24" fill="white"></rect> <path d="M17 9.5L12 14.5L7 9.5" stroke="#222" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
+                        <button type="button" *ngIf="!openFaqs[faq.id]">
+                            <svg viewBox="0 0 1024 1024" fill="#000000" class="icon" version="1.1" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path d="M512 980c-12.8 0-24-11.2-24-24V536H67.2c-12.8 0-24-11.2-24-24s10.4-24 24-24H488V67.2c0-12.8 11.2-24 24-24s24 10.4 24 24V488h420c12.8 0 24 11.2 24 24s-10.4 24-24 24H536v420c0 12.8-11.2 24-24 24z" fill=""></path></g></svg>
                         </button>
 
-                        <button type="button" *ngIf="openFaqs[faq.id]" (click)="showHideFaqContent(faq.id)">
-                            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <rect width="24" height="24" fill="white"></rect> <path d="M7 14.5L12 9.5L17 14.5" stroke="#222" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
+                        <button type="button" *ngIf="openFaqs[faq.id]">
+                            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <defs> <style>.c{fill:none;stroke:#222;stroke-linecap:round;stroke-linejoin:round;}</style> </defs> <g id="a"></g> <g id="b"> <line class="c" x1="3.5" x2="20.5" y1="12" y2="12"></line> </g> </g></svg>
                         </button>
                     </div><!--faq__single__title-->
 
