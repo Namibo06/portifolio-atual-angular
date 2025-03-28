@@ -108,12 +108,13 @@ main > aside{
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
+    cursor: pointer;
 }
 
 .faq__single__title > h3{
-    font-size: 18px;
+    font-size: 17px;
     font-weight: 500;
+    padding-left: 25px;
 }
 
 .faq__single__title > button{
@@ -122,19 +123,11 @@ main > aside{
 }
 
 .faq__single__title > button > svg{
-    width: 30px;
-    height: 30px;
-    cursor: pointer;
+    width: 20px;
+    height: 20px;
     position: absolute;
-    right: 20px;
-}
-
-.faq__single__title > button:nth-child(1) > svg{
-    bottom: 10px;
-}
-
-.faq__single__title > button:nth-child(2) > svg{
-    top: 10px;
+    top: 15px;
+    left: 10px;
 }
 
 .faq__single__content{
