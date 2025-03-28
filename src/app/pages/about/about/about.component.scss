@@ -1,0 +1,114 @@
+li{
+    list-style-type: none;
+}
+
+/*aside*/
+main{
+    display: flex;
+    flex-direction: row;
+    user-select: none;
+    padding: 0 15px;
+    min-height: 110vh;
+}
+
+main > aside{
+    position: relative;
+    top: 20px;
+    background-color: #f8f8f8;
+    height: 80.5vh;
+    width: 270px;
+    height: 670px;
+    border: 1px solid #a39999;
+    border-radius: 20px;
+}
+
+/*about wrapper*/
+.about__wrapper{
+    display: flex;
+    flex-direction: column;
+    margin: 60px 0;
+    padding: 0 15px;
+}
+
+/*about introduction*/
+.about__introduction{
+    display: flex;
+    flex-direction: row;
+}
+
+.project__back__page{
+    margin-right: 40px;
+    position: relative;
+    top: -4px;
+}
+
+.project__back__page > svg{
+    rotate: 180deg;
+    width: 45px;
+    height: 45px;
+    cursor: pointer;
+}
+
+.project__back__page > svg:active{
+    position: relative;
+    top: 1px;
+}
+
+/*about contacts*/
+.about__contacts{
+    position: relative;
+    top: 0px;
+    left: 50px;
+}
+
+.about__contacts > h2,
+.more__about__me > h2{
+    font-size: 24px;
+    font-weight: 500;
+    color: #222;
+}
+
+.about__contact__wrapper{
+    display: flex;
+    flex-direction: row;
+    padding-top: 50px;
+}
+
+.about__contact__wrapper > div > p,
+.more__about__me > div > h2{
+    font-size: 19px;
+    font-weight: 500;
+    color: #222;
+}
+
+.about__contact__wrapper > div:nth-child(1){
+    margin-right: 100px;
+}
+
+/*more about me*/
+.more__about__me{
+    padding: 0 5px;
+}
+
+.more__about__me > h2{
+    padding-top: 40px;
+}
+
+.more__about__me > h4{
+    padding: 5px 0 20px 0;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.more__about__me > div > ul{
+    padding: 10px 0 30px 0;
+}
+
+.more__about__me__single > ul{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.more__about__me__single > ul > li{
+    padding-bottom: 7px;
+}
