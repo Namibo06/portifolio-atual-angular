@@ -19,6 +19,7 @@ export class CardTemplateComponent implements OnInit{
   }
 
   getAllPosts(){
+    this.idCard = this.dataApi.id;
     this.titleCard = this.dataApi.title;
     this.imageURLCard = this.dataApi.image_url;
     this.typeNameCard = this.dataApi.types;
