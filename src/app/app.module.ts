@@ -12,6 +12,8 @@ import { CardTemplateModule } from './components/card-template/card-template.mod
 import { CardTiktokTemplateModule } from './components/card-tiktok-template/card-tiktok-template.module';
 import { AboutMeModule } from './components/about-me/about-me.module';
 import { RelevantArticlesModule } from './components/relevant-articles/relevant-articles.module';
+import { ArticleModule } from './pages/article/article.module';
+import { CreateArticleModule } from './pages/create-article/create-article.module';
 
 @NgModule({
   declarations: [
@@ -28,7 +30,9 @@ import { RelevantArticlesModule } from './components/relevant-articles/relevant-
     CardTemplateModule,
     CardTiktokTemplateModule,
     AboutMeModule,
-    RelevantArticlesModule
+    RelevantArticlesModule,
+    ArticleModule,
+    CreateArticleModule
   ],
   providers: [],
   bootstrap: [AppComponent]
