@@ -1,0 +1,304 @@
+<div class="create__article__container">
+    <header>
+        <app-header></app-header>
+    </header>
+
+    <main>
+        <form action="">
+            <div class="create__article__wrapper">
+                <section class="create__article__introduction">
+                    <div class="create__article__back__page">
+                        <svg onclick="return history.back()" title="Voltar Página" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M13.2328 16.4569C12.9328 16.7426 12.9212 17.2173 13.2069 17.5172C13.4926 17.8172 13.9673 17.8288 14.2672 17.5431L13.2328 16.4569ZM19.5172 12.5431C19.8172 12.2574 19.8288 11.7827 19.5431 11.4828C19.2574 11.1828 18.7827 11.1712 18.4828 11.4569L19.5172 12.5431ZM18.4828 12.5431C18.7827 12.8288 19.2574 12.8172 19.5431 12.5172C19.8288 12.2173 19.8172 11.7426 19.5172 11.4569L18.4828 12.5431ZM14.2672 6.4569C13.9673 6.17123 13.4926 6.18281 13.2069 6.48276C12.9212 6.78271 12.9328 7.25744 13.2328 7.5431L14.2672 6.4569ZM19 12.75C19.4142 12.75 19.75 12.4142 19.75 12C19.75 11.5858 19.4142 11.25 19 11.25V12.75ZM5 11.25C4.58579 11.25 4.25 11.5858 4.25 12C4.25 12.4142 4.58579 12.75 5 12.75V11.25ZM14.2672 17.5431L19.5172 12.5431L18.4828 11.4569L13.2328 16.4569L14.2672 17.5431ZM19.5172 11.4569L14.2672 6.4569L13.2328 7.5431L18.4828 12.5431L19.5172 11.4569ZM19 11.25L5 11.25V12.75L19 12.75V11.25Z" fill="#222"></path> </g></svg>  
+                    </div><!--create__article__back__page-->
+        
+                    <h2>Criar Artigo</h2>
+                </section><!--create__article__introduction-->
+
+                <section class="create__article__form__data">
+                    <div class="create__article__camp">
+                        <label>Posição</label>
+                        <select name="" id="">
+                            <option value="">Selecione uma posição</option>
+                            <option value="">1</option>
+                            <option value="">2</option>
+                            <option value="">3</option>
+                            <option value="">4</option>
+                            <option value="">5</option>
+                            <option value="">6</option>
+                            <option value="">7</option>
+                            <option value="">8</option>
+                            <option value="">9</option>
+                            <option value="">10</option>
+                            <option value="">11</option>
+                            <option value="">12</option>
+                            <option value="">13</option>
+                            <option value="">14</option>
+                            <option value="">15</option>
+                            <option value="">16</option>
+                            <option value="">17</option>
+                            <option value="">18</option>
+                            <option value="">19</option>
+                            <option value="">20</option>
+                        </select>
+                    </div><!--create__article__camp-->
+
+                    <div class="create__article__camp">
+                        <label>Tipo</label>
+                        <select name="" id="">
+                            <option value="">Selecione um tipo</option>
+                            <option value="">Título</option>
+                            <option value="">Subtítulo</option>
+                            <option value="">Parágrafo</option>
+                            <option value="">Imagem</option>
+                        </select>
+                    </div><!--create__article__camp-->
+
+                    <div class="create__article__templates">
+                        <div class="create__article__template__title">
+                            <label>Título</label>
+                            <input type="text">
+                        </div><!--create__article__template__title-->
+
+                        <div class="create__article__template__subtitle">
+                            <label>Subítulo</label>
+                            <input type="text">
+                        </div><!--create__article__template__subtitle-->
+
+                        <div class="create__article__template__paragraph">
+                            <label>Parágrafo</label>
+                            <textarea name="" id=""></textarea>
+                        </div><!--create__article__template__paragraph-->
+
+                        <div class="create__article__template__image">
+                            <label for="create-article-upload-image">Imagem</label>
+                            <input type="file" id="create-article-upload-image">    
+                        </div><!--create__article__template__image-->
+                    </div><!--create__article__templates-->
+                </section><!--create__article__form__data-->
+            </div><!--create__article__wrapper-->
+           
+            <aside>
+                <div class="create__article__button__top">
+                    <button type="button">Pré-visualização</button>
+                    <button type="button">Salvar</button>
+                </div><!--create__article__button__top-->
+    
+                <button type="submit">CRIAR ARTIGO</button>
+            </aside>
+        </form>
+
+        <div class="create__article__modal">
+            <button type="button">
+                <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <rect width="60" height="60" fill="url(#pattern0_144_447)"/>
+                    <defs>
+                    <pattern id="pattern0_144_447" patternContentUnits="objectBoundingBox" width="1" height="1">
+                    <use xlink:href="#image0_144_447" transform="scale(0.01)"/>
+                    </pattern>
+                    <image id="image0_144_447" width="100" height="100" preserveAspectRatio="none" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAYAAABw4pVUAAAACXBIWXMAAAsTAAALEwEAmpwYAAADB0lEQVR4nO2dTW7UMBiGXSTEMQC/gSXUHvb8nKNwCkS3FWKAG7CaXAE2HIFyBy5QFHMGjBxNCi2dNpkk/mznfaRvN1I07xPHdhLHShFCCCGEEEIIIYQQsjB+Pnmgfx3ilbN47Yw+XkTZ8F/x8uzRw/sqFZzVLxqjvzsLv+RqrD51KzwXE+GVutUYfJAOwiVUjcVvZ/Q6ZBNdCGVgtxyj1/EvU+FsSOCsdAlWm03Myxf7DPSQok+jyDh7fPee9BnoMqkoo6/t0Fb8z7ocylRHswvZjr/l/6zNoIw+jiAEJ+J/1GZSBicUYhMQQSGQD59CIB84hUA+ZAqBfLAUAvkwKSSBACnkbwiN1V+cRS0QXL09NoWch2Dw9UdV3fFKHTQWn2LKCM8u/Gp1uzH6M1vIPzK6Ga2PJ6WVcX7cOaRkN1O/JCOilAsyZpOSlZAdMiJIuVLGLFKyEXKDjBmlXCtjcinZCOkZTCD8zllsJjjmZuAx6yUJGSrlYGRLiXmsbIXECqoWkZGpkLkDq8VkZCxkruBqURmZC5k6wFpcRgFC/ERBpiGjECF+ZKDpyChIiN8z2LRkFCbED53ICUw0FyfEDznr+xD99n6BQvxUUgSetRQrxI+VIiKjcCF+XyliMhYgxA+VIiqDQv6HQhJqHR28ZCUko4OdekIyOjjsTUhGByeG42RseOukB7y5iMUNe2vefk9HSM0HVOm0kJqPcPeALzmg+D6ErwGNgS/KodgWwldJp4AvW6PAFsLlCNPBBTsosIXc0FI8l7QJCblCiueiT8EWckmK57LodG6d8MMBe8IvyqHgTr30MhTixSVQCOSDpxDIh00hkA+YQiAfKoVAPsi8hPBT4663EP1mdiH8GD/S+hg/t6tAbyHRNgtrN8CSvj7b1Et/U7EI2/lwyyPslBGyaQ6rpyomjdHv5c9CpFkGb1Vs2gX4Rq/ZUnChZTir34XnOkoKt8Iz9ilo+4zol6nrCCOKMMwL85TG4uMSyrVbsFZHYeQpnT8hhBBCCCGEEEIIISoyfwCNypTE7bQcigAAAABJRU5ErkJggg=="/>
+                    </defs>
+                </svg>                    
+            </button>
+
+            <div class="create__article__modal__content">
+                <div class="create__article__single">
+                    <h3>Título</h3>
+
+                    <div class="create__article__single__actions">
+                        <button type="button">
+                            <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <rect width="30" height="30" fill="url(#pattern0_149_10)"/>
+                                <defs>
+                                <pattern id="pattern0_149_10" patternContentUnits="objectBoundingBox" width="1" height="1">
+                                <use xlink:href="#image0_149_10" transform="scale(0.01)"/>
+                                </pattern>
+                                <image id="image0_149_10" width="100" height="100" preserveAspectRatio="none" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAYAAABw4pVUAAAACXBIWXMAAAsTAAALEwEAmpwYAAACiElEQVR4nO2dsYvUQBhHn1iICFoI2mhrIYLCNeafkKtsLLQSLMQDKzsbRbBSsBSsLdTWRgQVGxtRK0GuthDl5Bo9IoGxPG43m9n8dvc9mG6TnczLZPN9mW8DIiIiIiIiIiKLxCHgJvAe2AK2gU/AXeDY2J1bNc4Bm0C7S/sFXBi7k6tCUwa83aPtAJfH7uyy00woQymBMpQSKEMpgTKUEihDKYEylBIo43/7a5ySJaQt+zeiD5NyZ5oOCdWlfHSQs6T87tEfAdaAHxWEdPuUoJnyrm9nlpETAVI2KhzXQnK+DOztEaV8Aw5WOLaFldGWNoaUbtuzFY5taX6c7w24r0lkdCfFyrO2xwDOQ4oyphy4mlKU0fMsriFFGTP++A4pRRkD3QkNIUUZA8cKs0hRxi5xxqytb5zStZWnqZSZ7TNTVp6m8rMLpYQ93WuVkiWjVUqejFYpeTJapeTJaMv393nItXQ0ITJMoaOMKBpnRg6NMnJolJGDMoJQRhDKCEIZQSgjCGUEoYwglBGEMoJQRhDKCEIZQSgjCGUEoYwglBFEtyrjFfC1/CnkWAsSmrEHIpEjwH1lZLEf+O7MyOK1l6ksnrmILYsnrijM4oF3U1l0NXuutQ3ihgufs7hk0JfFGSPw+XF0ws89Nx1SnwPlrTOTFrKcBi4C14BbpcL1EfAYeFHyX+amZmB94OqifcBDE4X9eVqh5OuUWdt+HC5vKRu6Dq+bJT9NoU/PlYrFkR8ssJyelxUrVk/OsO1K0r1y4Y9lxIuXCrG2e068teA+i60ps7ebU0T00oMvE0jYLnHKeonoZYRb3p1yObta4hSZs5TP5fL1BrgOHJ9nB0REREREREREmBv/ACooBi2txpOLAAAAAElFTkSuQmCC"/>
+                                </defs>
+                            </svg>    
+                        </button>
+
+                        <button type="button">
+                            <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <rect width="30" height="30" fill="url(#pattern0_144_466)"/>
+                                <defs>
+                                <pattern id="pattern0_144_466" patternContentUnits="objectBoundingBox" width="1" height="1">
+                                <use xlink:href="#image0_144_466" transform="scale(0.01)"/>
+                                </pattern>
+                                <image id="image0_144_466" width="100" height="100" preserveAspectRatio="none" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAYAAABw4pVUAAAACXBIWXMAAAsTAAALEwEAmpwYAAACU0lEQVR4nO3dsWpUURSF4aMvoGgriGdPwM6ccxUsRCttxFKCT2AhPoHYivoMAS2szHtoIyJWlpbOXsExCKkkkQtWFmLIdfYe5//glHOZOWut4lZTCgAAAAAAwF87LOWEWr3vzT55sx/qdniUM35m/Oz4jPFZXP0xzZs9PGoIfzgPCOSYvNvnqQIZn7U2gajN7qjXbbX6erLT686E6/h16s7E33Hbh3q7ZOLdnk5/cbZSx1t9UjLwzbrh3Q6iL0TRgXQ7mA8zyxDIvejLUJLjzbai8yjeNq5HX4SSnPlQr2V4Tzjprb6NvgxFr6PXN2nec/auXDzrzV56t8X6BWELNXvx7eq5M9E5AAAAYGl8mN1dp1Oyi34v0JJPyS76gkQgBJJadGPFQggktejGioUQSGrRjRULIZDUohsrFkIgqUU3ViyEQFKLbqxYCIGkFt1YsRACSS26sWIhBJJadGPFQggktejGioUQSGrRjRULIZDUohsrFkIgqUU3ViyEQFKLbqxYCIGkFt1YsRACSS26sWIhBJJadGPFQggktejGioUQSGrRjRULIZDUohsrFkIgqUU3ViyEQFKLbqxYCIGkFt1YsRACSS26sWIhBJJadGPFQggkNfX6Pbq1WtLxVvdKdmr1ffRFaXnnXcnOh/p4fRZij0p2i0vnT6vbPPqy9K9Psy9fh3qqrALfnN1Qs/3/OIz98a+eyipRq5fV7GP45fXJzwcfrJdVNP4/1e4wu+XNnnuzV5P+oWNb3hm/u3d7tjtcuDn+puh7BQAAAAAAAIDyu5+fIEFvsAH2ZwAAAABJRU5ErkJggg=="/>
+                                </defs>
+                            </svg>                                
+                        </button>
+                    </div><!--create__article__single__actions-->
+                </div><!--create__article__single-->
+
+                <div class="create__article__single">
+                    <h3>Imagem</h3>
+
+                    <div class="create__article__single__actions">
+                        <button type="button">
+                            <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <rect width="30" height="30" fill="url(#pattern0_149_10)"/>
+                                <defs>
+                                <pattern id="pattern0_149_10" patternContentUnits="objectBoundingBox" width="1" height="1">
+                                <use xlink:href="#image0_149_10" transform="scale(0.01)"/>
+                                </pattern>
+                                <image id="image0_149_10" width="100" height="100" preserveAspectRatio="none" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAYAAABw4pVUAAAACXBIWXMAAAsTAAALEwEAmpwYAAACiElEQVR4nO2dsYvUQBhHn1iICFoI2mhrIYLCNeafkKtsLLQSLMQDKzsbRbBSsBSsLdTWRgQVGxtRK0GuthDl5Bo9IoGxPG43m9n8dvc9mG6TnczLZPN9mW8DIiIiIiIiIiKLxCHgJvAe2AK2gU/AXeDY2J1bNc4Bm0C7S/sFXBi7k6tCUwa83aPtAJfH7uyy00woQymBMpQSKEMpgTKUEihDKYEylBIo43/7a5ySJaQt+zeiD5NyZ5oOCdWlfHSQs6T87tEfAdaAHxWEdPuUoJnyrm9nlpETAVI2KhzXQnK+DOztEaV8Aw5WOLaFldGWNoaUbtuzFY5taX6c7w24r0lkdCfFyrO2xwDOQ4oyphy4mlKU0fMsriFFGTP++A4pRRkD3QkNIUUZA8cKs0hRxi5xxqytb5zStZWnqZSZ7TNTVp6m8rMLpYQ93WuVkiWjVUqejFYpeTJapeTJaMv393nItXQ0ITJMoaOMKBpnRg6NMnJolJGDMoJQRhDKCEIZQSgjCGUEoYwglBGEMoJQRhDKCEIZQSgjCGUEoYwglBFEtyrjFfC1/CnkWAsSmrEHIpEjwH1lZLEf+O7MyOK1l6ksnrmILYsnrijM4oF3U1l0NXuutQ3ihgufs7hk0JfFGSPw+XF0ws89Nx1SnwPlrTOTFrKcBi4C14BbpcL1EfAYeFHyX+amZmB94OqifcBDE4X9eVqh5OuUWdt+HC5vKRu6Dq+bJT9NoU/PlYrFkR8ssJyelxUrVk/OsO1K0r1y4Y9lxIuXCrG2e068teA+i60ps7ebU0T00oMvE0jYLnHKeonoZYRb3p1yObta4hSZs5TP5fL1BrgOHJ9nB0REREREREREmBv/ACooBi2txpOLAAAAAElFTkSuQmCC"/>
+                                </defs>
+                            </svg>    
+                        </button>
+
+                        <button type="button">
+                            <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <rect width="30" height="30" fill="url(#pattern0_144_466)"/>
+                                <defs>
+                                <pattern id="pattern0_144_466" patternContentUnits="objectBoundingBox" width="1" height="1">
+                                <use xlink:href="#image0_144_466" transform="scale(0.01)"/>
+                                </pattern>
+                                <image id="image0_144_466" width="100" height="100" preserveAspectRatio="none" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAYAAABw4pVUAAAACXBIWXMAAAsTAAALEwEAmpwYAAACU0lEQVR4nO3dsWpUURSF4aMvoGgriGdPwM6ccxUsRCttxFKCT2AhPoHYivoMAS2szHtoIyJWlpbOXsExCKkkkQtWFmLIdfYe5//glHOZOWut4lZTCgAAAAAAwF87LOWEWr3vzT55sx/qdniUM35m/Oz4jPFZXP0xzZs9PGoIfzgPCOSYvNvnqQIZn7U2gajN7qjXbbX6erLT686E6/h16s7E33Hbh3q7ZOLdnk5/cbZSx1t9UjLwzbrh3Q6iL0TRgXQ7mA8zyxDIvejLUJLjzbai8yjeNq5HX4SSnPlQr2V4Tzjprb6NvgxFr6PXN2nec/auXDzrzV56t8X6BWELNXvx7eq5M9E5AAAAYGl8mN1dp1Oyi34v0JJPyS76gkQgBJJadGPFQggktejGioUQSGrRjRULIZDUohsrFkIgqUU3ViyEQFKLbqxYCIGkFt1YsRACSS26sWIhBJJadGPFQggktejGioUQSGrRjRULIZDUohsrFkIgqUU3ViyEQFKLbqxYCIGkFt1YsRACSS26sWIhBJJadGPFQggktejGioUQSGrRjRULIZDUohsrFkIgqUU3ViyEQFKLbqxYCIGkFt1YsRACSS26sWIhBJJadGPFQggkNfX6Pbq1WtLxVvdKdmr1ffRFaXnnXcnOh/p4fRZij0p2i0vnT6vbPPqy9K9Psy9fh3qqrALfnN1Qs/3/OIz98a+eyipRq5fV7GP45fXJzwcfrJdVNP4/1e4wu+XNnnuzV5P+oWNb3hm/u3d7tjtcuDn+puh7BQAAAAAAAIDyu5+fIEFvsAH2ZwAAAABJRU5ErkJggg=="/>
+                                </defs>
+                            </svg>                                
+                        </button>
+                    </div><!--create__article__single__actions-->
+                </div><!--create__article__single-->
+
+                <div class="create__article__single">
+                    <h3>Subtítulo</h3>
+
+                    <div class="create__article__single__actions">
+                        <button type="button">
+                            <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <rect width="30" height="30" fill="url(#pattern0_149_10)"/>
+                                <defs>
+                                <pattern id="pattern0_149_10" patternContentUnits="objectBoundingBox" width="1" height="1">
+                                <use xlink:href="#image0_149_10" transform="scale(0.01)"/>
+                                </pattern>
+                                <image id="image0_149_10" width="100" height="100" preserveAspectRatio="none" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAYAAABw4pVUAAAACXBIWXMAAAsTAAALEwEAmpwYAAACiElEQVR4nO2dsYvUQBhHn1iICFoI2mhrIYLCNeafkKtsLLQSLMQDKzsbRbBSsBSsLdTWRgQVGxtRK0GuthDl5Bo9IoGxPG43m9n8dvc9mG6TnczLZPN9mW8DIiIiIiIiIiKLxCHgJvAe2AK2gU/AXeDY2J1bNc4Bm0C7S/sFXBi7k6tCUwa83aPtAJfH7uyy00woQymBMpQSKEMpgTKUEihDKYEylBIo43/7a5ySJaQt+zeiD5NyZ5oOCdWlfHSQs6T87tEfAdaAHxWEdPuUoJnyrm9nlpETAVI2KhzXQnK+DOztEaV8Aw5WOLaFldGWNoaUbtuzFY5taX6c7w24r0lkdCfFyrO2xwDOQ4oyphy4mlKU0fMsriFFGTP++A4pRRkD3QkNIUUZA8cKs0hRxi5xxqytb5zStZWnqZSZ7TNTVp6m8rMLpYQ93WuVkiWjVUqejFYpeTJapeTJaMv393nItXQ0ITJMoaOMKBpnRg6NMnJolJGDMoJQRhDKCEIZQSgjCGUEoYwglBGEMoJQRhDKCEIZQSgjCGUEoYwglBFEtyrjFfC1/CnkWAsSmrEHIpEjwH1lZLEf+O7MyOK1l6ksnrmILYsnrijM4oF3U1l0NXuutQ3ihgufs7hk0JfFGSPw+XF0ws89Nx1SnwPlrTOTFrKcBi4C14BbpcL1EfAYeFHyX+amZmB94OqifcBDE4X9eVqh5OuUWdt+HC5vKRu6Dq+bJT9NoU/PlYrFkR8ssJyelxUrVk/OsO1K0r1y4Y9lxIuXCrG2e068teA+i60ps7ebU0T00oMvE0jYLnHKeonoZYRb3p1yObta4hSZs5TP5fL1BrgOHJ9nB0REREREREREmBv/ACooBi2txpOLAAAAAElFTkSuQmCC"/>
+                                </defs>
+                            </svg>    
+                        </button>
+
+                        <button type="button">
+                            <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <rect width="30" height="30" fill="url(#pattern0_144_466)"/>
+                                <defs>
+                                <pattern id="pattern0_144_466" patternContentUnits="objectBoundingBox" width="1" height="1">
+                                <use xlink:href="#image0_144_466" transform="scale(0.01)"/>
+                                </pattern>
+                                <image id="image0_144_466" width="100" height="100" preserveAspectRatio="none" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAYAAABw4pVUAAAACXBIWXMAAAsTAAALEwEAmpwYAAACU0lEQVR4nO3dsWpUURSF4aMvoGgriGdPwM6ccxUsRCttxFKCT2AhPoHYivoMAS2szHtoIyJWlpbOXsExCKkkkQtWFmLIdfYe5//glHOZOWut4lZTCgAAAAAAwF87LOWEWr3vzT55sx/qdniUM35m/Oz4jPFZXP0xzZs9PGoIfzgPCOSYvNvnqQIZn7U2gajN7qjXbbX6erLT686E6/h16s7E33Hbh3q7ZOLdnk5/cbZSx1t9UjLwzbrh3Q6iL0TRgXQ7mA8zyxDIvejLUJLjzbai8yjeNq5HX4SSnPlQr2V4Tzjprb6NvgxFr6PXN2nec/auXDzrzV56t8X6BWELNXvx7eq5M9E5AAAAYGl8mN1dp1Oyi34v0JJPyS76gkQgBJJadGPFQggktejGioUQSGrRjRULIZDUohsrFkIgqUU3ViyEQFKLbqxYCIGkFt1YsRACSS26sWIhBJJadGPFQggktejGioUQSGrRjRULIZDUohsrFkIgqUU3ViyEQFKLbqxYCIGkFt1YsRACSS26sWIhBJJadGPFQggktejGioUQSGrRjRULIZDUohsrFkIgqUU3ViyEQFKLbqxYCIGkFt1YsRACSS26sWIhBJJadGPFQggkNfX6Pbq1WtLxVvdKdmr1ffRFaXnnXcnOh/p4fRZij0p2i0vnT6vbPPqy9K9Psy9fh3qqrALfnN1Qs/3/OIz98a+eyipRq5fV7GP45fXJzwcfrJdVNP4/1e4wu+XNnnuzV5P+oWNb3hm/u3d7tjtcuDn+puh7BQAAAAAAAIDyu5+fIEFvsAH2ZwAAAABJRU5ErkJggg=="/>
+                                </defs>
+                            </svg>                                
+                        </button>
+                    </div><!--create__article__single__actions-->
+                </div><!--create__article__single-->
+
+                <div class="create__article__single">
+                    <h3>Parágrafo</h3>
+
+                    <div class="create__article__single__actions">
+                        <button type="button">
+                            <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <rect width="30" height="30" fill="url(#pattern0_149_10)"/>
+                                <defs>
+                                <pattern id="pattern0_149_10" patternContentUnits="objectBoundingBox" width="1" height="1">
+                                <use xlink:href="#image0_149_10" transform="scale(0.01)"/>
+                                </pattern>
+                                <image id="image0_149_10" width="100" height="100" preserveAspectRatio="none" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAYAAABw4pVUAAAACXBIWXMAAAsTAAALEwEAmpwYAAACiElEQVR4nO2dsYvUQBhHn1iICFoI2mhrIYLCNeafkKtsLLQSLMQDKzsbRbBSsBSsLdTWRgQVGxtRK0GuthDl5Bo9IoGxPG43m9n8dvc9mG6TnczLZPN9mW8DIiIiIiIiIiKLxCHgJvAe2AK2gU/AXeDY2J1bNc4Bm0C7S/sFXBi7k6tCUwa83aPtAJfH7uyy00woQymBMpQSKEMpgTKUEihDKYEylBIo43/7a5ySJaQt+zeiD5NyZ5oOCdWlfHSQs6T87tEfAdaAHxWEdPuUoJnyrm9nlpETAVI2KhzXQnK+DOztEaV8Aw5WOLaFldGWNoaUbtuzFY5taX6c7w24r0lkdCfFyrO2xwDOQ4oyphy4mlKU0fMsriFFGTP++A4pRRkD3QkNIUUZA8cKs0hRxi5xxqytb5zStZWnqZSZ7TNTVp6m8rMLpYQ93WuVkiWjVUqejFYpeTJapeTJaMv393nItXQ0ITJMoaOMKBpnRg6NMnJolJGDMoJQRhDKCEIZQSgjCGUEoYwglBGEMoJQRhDKCEIZQSgjCGUEoYwglBFEtyrjFfC1/CnkWAsSmrEHIpEjwH1lZLEf+O7MyOK1l6ksnrmILYsnrijM4oF3U1l0NXuutQ3ihgufs7hk0JfFGSPw+XF0ws89Nx1SnwPlrTOTFrKcBi4C14BbpcL1EfAYeFHyX+amZmB94OqifcBDE4X9eVqh5OuUWdt+HC5vKRu6Dq+bJT9NoU/PlYrFkR8ssJyelxUrVk/OsO1K0r1y4Y9lxIuXCrG2e068teA+i60ps7ebU0T00oMvE0jYLnHKeonoZYRb3p1yObta4hSZs5TP5fL1BrgOHJ9nB0REREREREREmBv/ACooBi2txpOLAAAAAElFTkSuQmCC"/>
+                                </defs>
+                            </svg>    
+                        </button>
+
+                        <button type="button">
+                            <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <rect width="30" height="30" fill="url(#pattern0_144_466)"/>
+                                <defs>
+                                <pattern id="pattern0_144_466" patternContentUnits="objectBoundingBox" width="1" height="1">
+                                <use xlink:href="#image0_144_466" transform="scale(0.01)"/>
+                                </pattern>
+                                <image id="image0_144_466" width="100" height="100" preserveAspectRatio="none" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAYAAABw4pVUAAAACXBIWXMAAAsTAAALEwEAmpwYAAACU0lEQVR4nO3dsWpUURSF4aMvoGgriGdPwM6ccxUsRCttxFKCT2AhPoHYivoMAS2szHtoIyJWlpbOXsExCKkkkQtWFmLIdfYe5//glHOZOWut4lZTCgAAAAAAwF87LOWEWr3vzT55sx/qdniUM35m/Oz4jPFZXP0xzZs9PGoIfzgPCOSYvNvnqQIZn7U2gajN7qjXbbX6erLT686E6/h16s7E33Hbh3q7ZOLdnk5/cbZSx1t9UjLwzbrh3Q6iL0TRgXQ7mA8zyxDIvejLUJLjzbai8yjeNq5HX4SSnPlQr2V4Tzjprb6NvgxFr6PXN2nec/auXDzrzV56t8X6BWELNXvx7eq5M9E5AAAAYGl8mN1dp1Oyi34v0JJPyS76gkQgBJJadGPFQggktejGioUQSGrRjRULIZDUohsrFkIgqUU3ViyEQFKLbqxYCIGkFt1YsRACSS26sWIhBJJadGPFQggktejGioUQSGrRjRULIZDUohsrFkIgqUU3ViyEQFKLbqxYCIGkFt1YsRACSS26sWIhBJJadGPFQggktejGioUQSGrRjRULIZDUohsrFkIgqUU3ViyEQFKLbqxYCIGkFt1YsRACSS26sWIhBJJadGPFQggkNfX6Pbq1WtLxVvdKdmr1ffRFaXnnXcnOh/p4fRZij0p2i0vnT6vbPPqy9K9Psy9fh3qqrALfnN1Qs/3/OIz98a+eyipRq5fV7GP45fXJzwcfrJdVNP4/1e4wu+XNnnuzV5P+oWNb3hm/u3d7tjtcuDn+puh7BQAAAAAAAIDyu5+fIEFvsAH2ZwAAAABJRU5ErkJggg=="/>
+                                </defs>
+                            </svg>                                
+                        </button>
+                    </div><!--create__article__single__actions-->
+                </div><!--create__article__single-->
+
+                <div class="create__article__single">
+                    <h3>Imagem</h3>
+
+                    <div class="create__article__single__actions">
+                        <button type="button">
+                            <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <rect width="30" height="30" fill="url(#pattern0_149_10)"/>
+                                <defs>
+                                <pattern id="pattern0_149_10" patternContentUnits="objectBoundingBox" width="1" height="1">
+                                <use xlink:href="#image0_149_10" transform="scale(0.01)"/>
+                                </pattern>
+                                <image id="image0_149_10" width="100" height="100" preserveAspectRatio="none" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAYAAABw4pVUAAAACXBIWXMAAAsTAAALEwEAmpwYAAACiElEQVR4nO2dsYvUQBhHn1iICFoI2mhrIYLCNeafkKtsLLQSLMQDKzsbRbBSsBSsLdTWRgQVGxtRK0GuthDl5Bo9IoGxPG43m9n8dvc9mG6TnczLZPN9mW8DIiIiIiIiIiKLxCHgJvAe2AK2gU/AXeDY2J1bNc4Bm0C7S/sFXBi7k6tCUwa83aPtAJfH7uyy00woQymBMpQSKEMpgTKUEihDKYEylBIo43/7a5ySJaQt+zeiD5NyZ5oOCdWlfHSQs6T87tEfAdaAHxWEdPuUoJnyrm9nlpETAVI2KhzXQnK+DOztEaV8Aw5WOLaFldGWNoaUbtuzFY5taX6c7w24r0lkdCfFyrO2xwDOQ4oyphy4mlKU0fMsriFFGTP++A4pRRkD3QkNIUUZA8cKs0hRxi5xxqytb5zStZWnqZSZ7TNTVp6m8rMLpYQ93WuVkiWjVUqejFYpeTJapeTJaMv393nItXQ0ITJMoaOMKBpnRg6NMnJolJGDMoJQRhDKCEIZQSgjCGUEoYwglBGEMoJQRhDKCEIZQSgjCGUEoYwglBFEtyrjFfC1/CnkWAsSmrEHIpEjwH1lZLEf+O7MyOK1l6ksnrmILYsnrijM4oF3U1l0NXuutQ3ihgufs7hk0JfFGSPw+XF0ws89Nx1SnwPlrTOTFrKcBi4C14BbpcL1EfAYeFHyX+amZmB94OqifcBDE4X9eVqh5OuUWdt+HC5vKRu6Dq+bJT9NoU/PlYrFkR8ssJyelxUrVk/OsO1K0r1y4Y9lxIuXCrG2e068teA+i60ps7ebU0T00oMvE0jYLnHKeonoZYRb3p1yObta4hSZs5TP5fL1BrgOHJ9nB0REREREREREmBv/ACooBi2txpOLAAAAAElFTkSuQmCC"/>
+                                </defs>
+                            </svg>    
+                        </button>
+
+                        <button type="button">
+                            <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <rect width="30" height="30" fill="url(#pattern0_144_466)"/>
+                                <defs>
+                                <pattern id="pattern0_144_466" patternContentUnits="objectBoundingBox" width="1" height="1">
+                                <use xlink:href="#image0_144_466" transform="scale(0.01)"/>
+                                </pattern>
+                                <image id="image0_144_466" width="100" height="100" preserveAspectRatio="none" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAYAAABw4pVUAAAACXBIWXMAAAsTAAALEwEAmpwYAAACU0lEQVR4nO3dsWpUURSF4aMvoGgriGdPwM6ccxUsRCttxFKCT2AhPoHYivoMAS2szHtoIyJWlpbOXsExCKkkkQtWFmLIdfYe5//glHOZOWut4lZTCgAAAAAAwF87LOWEWr3vzT55sx/qdniUM35m/Oz4jPFZXP0xzZs9PGoIfzgPCOSYvNvnqQIZn7U2gajN7qjXbbX6erLT686E6/h16s7E33Hbh3q7ZOLdnk5/cbZSx1t9UjLwzbrh3Q6iL0TRgXQ7mA8zyxDIvejLUJLjzbai8yjeNq5HX4SSnPlQr2V4Tzjprb6NvgxFr6PXN2nec/auXDzrzV56t8X6BWELNXvx7eq5M9E5AAAAYGl8mN1dp1Oyi34v0JJPyS76gkQgBJJadGPFQggktejGioUQSGrRjRULIZDUohsrFkIgqUU3ViyEQFKLbqxYCIGkFt1YsRACSS26sWIhBJJadGPFQggktejGioUQSGrRjRULIZDUohsrFkIgqUU3ViyEQFKLbqxYCIGkFt1YsRACSS26sWIhBJJadGPFQggktejGioUQSGrRjRULIZDUohsrFkIgqUU3ViyEQFKLbqxYCIGkFt1YsRACSS26sWIhBJJadGPFQggkNfX6Pbq1WtLxVvdKdmr1ffRFaXnnXcnOh/p4fRZij0p2i0vnT6vbPPqy9K9Psy9fh3qqrALfnN1Qs/3/OIz98a+eyipRq5fV7GP45fXJzwcfrJdVNP4/1e4wu+XNnnuzV5P+oWNb3hm/u3d7tjtcuDn+puh7BQAAAAAAAIDyu5+fIEFvsAH2ZwAAAABJRU5ErkJggg=="/>
+                                </defs>
+                            </svg>                                
+                        </button>
+                    </div><!--create__article__single__actions-->
+                </div><!--create__article__single-->
+
+                <div class="create__article__single">
+                    <h3>Subtítulo</h3>
+
+                    <div class="create__article__single__actions">
+                        <button type="button">
+                            <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <rect width="30" height="30" fill="url(#pattern0_149_10)"/>
+                                <defs>
+                                <pattern id="pattern0_149_10" patternContentUnits="objectBoundingBox" width="1" height="1">
+                                <use xlink:href="#image0_149_10" transform="scale(0.01)"/>
+                                </pattern>
+                                <image id="image0_149_10" width="100" height="100" preserveAspectRatio="none" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAYAAABw4pVUAAAACXBIWXMAAAsTAAALEwEAmpwYAAACiElEQVR4nO2dsYvUQBhHn1iICFoI2mhrIYLCNeafkKtsLLQSLMQDKzsbRbBSsBSsLdTWRgQVGxtRK0GuthDl5Bo9IoGxPG43m9n8dvc9mG6TnczLZPN9mW8DIiIiIiIiIiKLxCHgJvAe2AK2gU/AXeDY2J1bNc4Bm0C7S/sFXBi7k6tCUwa83aPtAJfH7uyy00woQymBMpQSKEMpgTKUEihDKYEylBIo43/7a5ySJaQt+zeiD5NyZ5oOCdWlfHSQs6T87tEfAdaAHxWEdPuUoJnyrm9nlpETAVI2KhzXQnK+DOztEaV8Aw5WOLaFldGWNoaUbtuzFY5taX6c7w24r0lkdCfFyrO2xwDOQ4oyphy4mlKU0fMsriFFGTP++A4pRRkD3QkNIUUZA8cKs0hRxi5xxqytb5zStZWnqZSZ7TNTVp6m8rMLpYQ93WuVkiWjVUqejFYpeTJapeTJaMv393nItXQ0ITJMoaOMKBpnRg6NMnJolJGDMoJQRhDKCEIZQSgjCGUEoYwglBGEMoJQRhDKCEIZQSgjCGUEoYwglBFEtyrjFfC1/CnkWAsSmrEHIpEjwH1lZLEf+O7MyOK1l6ksnrmILYsnrijM4oF3U1l0NXuutQ3ihgufs7hk0JfFGSPw+XF0ws89Nx1SnwPlrTOTFrKcBi4C14BbpcL1EfAYeFHyX+amZmB94OqifcBDE4X9eVqh5OuUWdt+HC5vKRu6Dq+bJT9NoU/PlYrFkR8ssJyelxUrVk/OsO1K0r1y4Y9lxIuXCrG2e068teA+i60ps7ebU0T00oMvE0jYLnHKeonoZYRb3p1yObta4hSZs5TP5fL1BrgOHJ9nB0REREREREREmBv/ACooBi2txpOLAAAAAElFTkSuQmCC"/>
+                                </defs>
+                            </svg>    
+                        </button>
+
+                        <button type="button">
+                            <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <rect width="30" height="30" fill="url(#pattern0_144_466)"/>
+                                <defs>
+                                <pattern id="pattern0_144_466" patternContentUnits="objectBoundingBox" width="1" height="1">
+                                <use xlink:href="#image0_144_466" transform="scale(0.01)"/>
+                                </pattern>
+                                <image id="image0_144_466" width="100" height="100" preserveAspectRatio="none" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAYAAABw4pVUAAAACXBIWXMAAAsTAAALEwEAmpwYAAACU0lEQVR4nO3dsWpUURSF4aMvoGgriGdPwM6ccxUsRCttxFKCT2AhPoHYivoMAS2szHtoIyJWlpbOXsExCKkkkQtWFmLIdfYe5//glHOZOWut4lZTCgAAAAAAwF87LOWEWr3vzT55sx/qdniUM35m/Oz4jPFZXP0xzZs9PGoIfzgPCOSYvNvnqQIZn7U2gajN7qjXbbX6erLT686E6/h16s7E33Hbh3q7ZOLdnk5/cbZSx1t9UjLwzbrh3Q6iL0TRgXQ7mA8zyxDIvejLUJLjzbai8yjeNq5HX4SSnPlQr2V4Tzjprb6NvgxFr6PXN2nec/auXDzrzV56t8X6BWELNXvx7eq5M9E5AAAAYGl8mN1dp1Oyi34v0JJPyS76gkQgBJJadGPFQggktejGioUQSGrRjRULIZDUohsrFkIgqUU3ViyEQFKLbqxYCIGkFt1YsRACSS26sWIhBJJadGPFQggktejGioUQSGrRjRULIZDUohsrFkIgqUU3ViyEQFKLbqxYCIGkFt1YsRACSS26sWIhBJJadGPFQggktejGioUQSGrRjRULIZDUohsrFkIgqUU3ViyEQFKLbqxYCIGkFt1YsRACSS26sWIhBJJadGPFQggkNfX6Pbq1WtLxVvdKdmr1ffRFaXnnXcnOh/p4fRZij0p2i0vnT6vbPPqy9K9Psy9fh3qqrALfnN1Qs/3/OIz98a+eyipRq5fV7GP45fXJzwcfrJdVNP4/1e4wu+XNnnuzV5P+oWNb3hm/u3d7tjtcuDn+puh7BQAAAAAAAIDyu5+fIEFvsAH2ZwAAAABJRU5ErkJggg=="/>
+                                </defs>
+                            </svg>                                
+                        </button>
+                    </div><!--create__article__single__actions-->
+                </div><!--create__article__single-->
+            </div><!--create__article__modal__content-->
+
+            <div class="create__article__modal__update">
+                <h2>Título</h2> <!--type-->
+                <!--TODO: Fazer uma condicional para um template dinâmico-->
+                <div class="create__article__modal__update__camp">
+                    <label>Posição</label>
+                    <select name="" id="">
+                        <option value="">1</option>
+                    </select>
+                </div><!--create__article__modal__update__camp-->
+
+                <div class="create__article__modal__update__camp">
+                    <label>Descrição</label>
+                    <p>Conteúdo para ser atualizado...</p>
+                </div><!--create__article__modal__update__camp-->
+
+                <button type="submit">ATUALIZAR</button>
+            </div><!--create__article__modal__update-->
+        </div><!--create__article__modal-->
+    </main>
+</div><!--create__article__container-->
