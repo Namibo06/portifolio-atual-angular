@@ -1,0 +1,164 @@
+//variables
+$color__border: #a39999;
+$color__bg: #f8f8f8;
+$color__text: #333;
+
+//mixins
+@mixin button__default($width__button){
+    width: $width__button;
+    height: 30px;
+    font-size: 14px;
+    border: 1px solid $color__border;
+    border-radius: 5px;
+    background-color: $color__bg;
+    color: $color__text;
+    cursor: pointer;
+}
+
+@mixin input__default{
+   width: 300px;
+   padding: 8px 15px;
+   border: 1px solid $color__border;
+   border-radius: 5px;
+    outline: 0;
+}
+
+@mixin display__flex__direction($direction){
+    display: flex;
+    flex-direction: $direction;
+}
+
+@mixin template__input__textarea($height, $overflow__y){
+    width: 100%;
+    height: $height;
+    overflow-y: $overflow__y;
+    border: 1px solid $color__border;
+    border-radius: 5px;
+    margin-top: 12px;
+    outline: 0;
+    resize: none;
+    padding: 10px
+}
+
+//main
+main{
+    @include display__flex__direction(column);
+    user-select: none;
+    padding: 40px 50px 40px 40px;
+    position: relative;
+    min-height: 70vh;
+}
+
+main > form{
+    @include display__flex__direction(row);
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+}
+
+.create__article__wrapper{
+    @include display__flex__direction(column);
+    width: 100%;
+}
+
+.create__article__back__page > svg{
+    rotate: 180deg;
+    width: 45px;
+    height: 45px;
+    cursor: pointer;
+}
+
+.create__article__back__page > svg:active{
+    position: relative;
+    top: 1px;
+}
+
+.create__article__introduction{
+    @include display__flex__direction(row);
+    align-items: center;
+}
+
+.create__article__introduction > h2{
+    font-size: 24px;
+    font-weight: 400;
+    position: relative;
+    top: -2px;
+    left: 50px;
+}
+
+/*create article form data*/
+.create__article__form__data{
+    position: relative;
+    top: 35px;
+  
+}
+
+.create__article__camp,
+.create__article__templates > div{
+    @include display__flex__direction(column);
+    padding-left: 5px;
+}
+
+.create__article__form__data > div > label{
+    font-size: 19px;
+    font-weight: 500;
+    margin-bottom: 12px;
+}
+
+.create__article__form__data > div > select{
+    @include input__default;
+    margin-bottom: 30px;
+}
+
+/*aside*/
+aside{
+    width: 20%;
+}
+
+aside > button{
+    position: absolute;
+    bottom: 0;
+    right: 50px;
+    @include button__default(140px);
+}
+
+aside > button:active{
+    bottom: -1px;
+}
+
+aside > .create__article__button__top{
+    @include display__flex__direction(column);
+    position: absolute;
+    top: 50px;
+    right: 50px;
+}
+
+.create__article__button__top > button{
+    margin-bottom: 30px;
+    @include button__default(100px);
+}
+
+.create__article__button__top > button:active{
+    position: relative;
+    top: 1px;
+}
+
+/*templates*/
+.create__article__templates > div > label{
+    font-size: 19px;
+    font-weight: 500;
+}
+
+.create__article__templates > div > input[type=text]{
+   @include template__input__textarea(40px,hidden);
+}
+
+.create__article__templates > div > textarea{
+    @include template__input__textarea(120px,auto);
+}
+
+.create__article__templates > div > input[type=file]{
+    @include template__input__textarea(40px,hidden);
+}
+
+/*modal update*/

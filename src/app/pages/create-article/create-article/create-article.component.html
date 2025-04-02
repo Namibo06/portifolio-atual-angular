@@ -44,32 +44,32 @@
 
                     <div class="create__article__camp">
                         <label>Tipo</label>
-                        <select name="" id="">
-                            <option value="">Selecione um tipo</option>
-                            <option value="">Título</option>
-                            <option value="">Subtítulo</option>
-                            <option value="">Parágrafo</option>
-                            <option value="">Imagem</option>
+                        <select name="" id="" (change)="chooseTemplate($event)">
+                            <option value="" (click)="hideAll()">Selecione um tipo</option>
+                            <option value="1" (click)="openTemplateTitle()">Título</option>
+                            <option value="2" (click)="openTemplateSubtitle()">Subtítulo</option>
+                            <option value="3" (click)="openTemplateParagraph()">Parágrafo</option>
+                            <option value="4" (click)="openTemplateImage()">Imagem</option>
                         </select>
                     </div><!--create__article__camp-->
 
                     <div class="create__article__templates">
-                        <div class="create__article__template__title">
+                        <div class="create__article__template__title" *ngIf="isOpenTemplateTitle">
                             <label>Título</label>
-                            <input type="text">
+                            <input type="text" [(ngModel)]="titleForm">
                         </div><!--create__article__template__title-->
 
-                        <div class="create__article__template__subtitle">
+                        <div class="create__article__template__subtitle" *ngIf="isOpenTemplateSubtitle">
                             <label>Subítulo</label>
-                            <input type="text">
+                            <input type="text" [(ngModel)]="subtitleForm">
                         </div><!--create__article__template__subtitle-->
 
-                        <div class="create__article__template__paragraph">
+                        <div class="create__article__template__paragraph" *ngIf="isOpenTemplateParagraph">
                             <label>Parágrafo</label>
-                            <textarea name="" id=""></textarea>
+                            <textarea name="" id="" [(ngModel)]="paragraphForm"></textarea>
                         </div><!--create__article__template__paragraph-->
 
-                        <div class="create__article__template__image">
+                        <div class="create__article__template__image" *ngIf="isOpenTemplateImage">
                             <label for="create-article-upload-image">Imagem</label>
                             <input type="file" id="create-article-upload-image">    
                         </div><!--create__article__template__image-->
@@ -79,15 +79,16 @@
            
             <aside>
                 <div class="create__article__button__top">
-                    <button type="button">Pré-visualização</button>
+                    <button type="button">Preview</button>
                     <button type="button">Salvar</button>
                 </div><!--create__article__button__top-->
-    
+                
+                <!--TODO: Criar condição para aparecer esse botão ou o de salvar-->
                 <button type="submit">CRIAR ARTIGO</button>
             </aside>
         </form>
 
-        <div class="create__article__modal">
+        <div class="create__article__modal" *ngIf="isOpenModal">
             <button type="button">
                 <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                     <rect width="60" height="60" fill="url(#pattern0_144_447)"/>
