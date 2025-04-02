@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, ElementRef, OnInit, QueryList, ViewChildren } from '@angular/core';
 
 @Component({
   selector: 'app-article',
@@ -14,6 +14,8 @@ export class ArticleComponent implements OnInit{
   articleUpdatedAt: string = "";
 
   articleSectionData: any = [];
+
+  @ViewChildren('subtitleRef') subtitles!: QueryList<ElementRef>;
 
   ngOnInit(): void {
     this.articleData.article.article_section.sort((a, b) => Number(a.position) - Number(b.position));
@@ -89,6 +91,15 @@ export class ArticleComponent implements OnInit{
       ],
     },
   };
+
+  scrollToSection(position: number) {
+    // Encontra o elemento correto com base na posição
+    const element = this.subtitles.toArray().find(el => el.nativeElement.id === 'subtitle' + position);
+    
+    if (element) {
+      element.nativeElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  }
 
   trackByPosition(index: number, item: any): number {
     return item.position;

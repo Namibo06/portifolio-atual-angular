@@ -19,21 +19,26 @@
                 <div class="article__box__wrapper" *ngFor="let section of articleSectionData; trackBy: trackByPosition">
                     
                     <h2 *ngIf="section.section_type === 'title'">{{ section.content }}</h2>
-                    
-                    <h4 *ngIf="section.section_type === 'subtitle'" [id]="'subtitle' + section.position">{{ section.content }}</h4>
-                    
+            
+                    <h4 *ngIf="section.section_type === 'subtitle'"
+                        [id]="'subtitle' + section.position"
+                        #subtitleRef>
+                        {{ section.content }}
+                    </h4>
+            
                     <p *ngIf="section.section_type === 'paragraph'">{{ section.content }}</p>
-                    
+            
                     <img *ngIf="section.image_url" [src]="section.image_url" [alt]="section.caption" [title]="section.caption">
-                </div><!--article__box__wrapper-->  
-            </section><!--article__box-->
+                </div>  
+            </section>            
         </div><!--article__wrapper-->
 
         <aside>
             <h2>Tabela de Conteúdo</h2>
 
-            <button type="button">O que faz o HTML?</button>
-            <button type="button">Como estruturar o HTML?</button>
+            <button type="button" (click)="scrollToSection(3)">O que faz o HTML?</button>
+            <button type="button" (click)="scrollToSection(6)">Como estruturar o HTML?</button>
+
 
             <h2>Artigos Populares</h2>
             <ul>
