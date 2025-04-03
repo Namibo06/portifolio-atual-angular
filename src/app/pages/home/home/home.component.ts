@@ -18,6 +18,8 @@ export class HomeComponent implements OnInit, AfterViewInit{
   searchFoundLength: number = 0;
   contentInput: string = "";
 
+  postsFiltered: any = [];
+
 /*  templates: any = [
     "templateAll",
     "templateBlog",
@@ -75,9 +77,21 @@ export class HomeComponent implements OnInit, AfterViewInit{
     }
   }
 
-  findBySearch(){
-    this.searchContent = this.contentInput;
+  findBySearch(): void {
+    const searchTerm = this.contentInput?.trim().toLowerCase();
+    
+    if (!searchTerm) {
+      this.postsFiltered = [];
+      return;
+    }
+
+    this.postsFiltered = this.allPosts.filter(post => 
+      post.types.some(type => type.type_name.toLowerCase().includes(searchTerm))
+    );
+
+    this.searchFoundLength = this.postsFiltered.length;
   }
+
 
   /*fake data*/
   allPosts = [

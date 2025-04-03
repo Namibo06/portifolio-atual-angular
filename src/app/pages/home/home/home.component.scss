@@ -88,11 +88,16 @@ main > aside{
     left: 60px;
 }
 
+.home__search > p > i {
+    color: #0066ff;
+    font-weight: 600;
+}
+
 /*home content*/
 .home__content{
     margin: 90px 20px 20px 20px;
-    background-color: #f8f8f8;
-    border: 1px solid #a39999;
+    //background-color: #f8f8f8;
+    //border: 1px solid #a39999;
     border-radius: 20px;
     width: 1020px;
     max-width: 95%;
