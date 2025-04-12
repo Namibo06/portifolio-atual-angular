@@ -243,6 +243,14 @@ main > aside{
     .home__content{
         margin: 90px 10px 20px 10px;
     }
+
+    /*home all content*/
+    .home__all__template > h2,
+    .home__blog__template > h2,
+    .home__project__template > h2,
+    .home__tiktok__template > h2{
+        font-size: 16px;
+    } 
 }
 
 @media (width < 399px) {
@@ -303,6 +311,14 @@ main > aside{
     main{
         padding: 0 5px;
     }
+
+    /*home all content*/
+    .home__all__template > h2,
+    .home__blog__template > h2,
+    .home__project__template > h2,
+    .home__tiktok__template > h2{
+        font-size: 14px;
+    } 
 }
 
 @media (width < 305px) {

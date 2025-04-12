@@ -50,6 +50,7 @@
     border-radius: 30px;
     margin-right: 10px;
     padding: 5px 0;
+    max-width: 100px;
 }
 
 .home__article__single__types > .article__type:last-child{
@@ -225,7 +226,7 @@
     }
 }
 
-@media (width < 640px) {
+@media (width < 660px) {
     .card__template__container > picture{
         min-width: 240px;
         max-width: 240px;
@@ -233,6 +234,17 @@
     
     .card__tiktok__overlay_img{
         width: 240px;
+    }
+}
+
+@media (width < 640px) {
+    .card__template__container > picture{
+        min-width: 220px;
+        max-width: 220px;
+    }
+    
+    .card__tiktok__overlay_img{
+        width: 220px;
     }
     
     .article__type > p{
@@ -257,7 +269,7 @@
     }
 }
 
-@media (width < 580px) {
+@media (width < 600px) {
     .card__template__container{
         flex-direction: column;
         height: 450px;

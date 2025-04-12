@@ -156,8 +156,7 @@ export class HomeComponent implements OnInit, AfterViewInit{
       types: [
         { id: "1", type_name: "Node.js" },
         { id: "2", type_name: "Express.js" },
-        { id: "3", type_name: "Sequelize" },
-        { id: "4", type_name: "MySQL" }
+        { id: "3", type_name: "MySQL" }
       ],
       title: "Gerenciador para um hotel canino",
       description: "Recentemente, percebi que o pessoal de T.I tem uma breve dificuldade em começar a programar, então sempre recomendo a todos, a primeiro entender como funciona a internet e também como funciona HTML, CSS e JavaScript...",
@@ -169,8 +168,7 @@ export class HomeComponent implements OnInit, AfterViewInit{
       types: [
         { id: "1", type_name: "Java" },
         { id: "2", type_name: "Kafka" },
-        { id: "3", type_name: "SpringBoot" },
-        { id: "4", type_name: "MySQL" },
+        { id: "3", type_name: "MySQL" },
       ],
       title: "E-commerce com pagamento",
       description: "Recentemente, percebi que o pessoal de T.I tem uma breve dificuldade em começar a programar, então sempre recomendo a todos, a primeiro entender como funciona a internet e também como funciona HTML, CSS e JavaScript...",
@@ -244,8 +242,7 @@ export class HomeComponent implements OnInit, AfterViewInit{
       types: [
         { id: "1", type_name: "Node.js" },
         { id: "2", type_name: "Express.js" },
-        { id: "3", type_name: "Sequelize" },
-        { id: "4", type_name: "MySQL" }
+        { id: "3", type_name: "MySQL" }
       ],
       title: "Gerenciador para um hotel canino",
       description: "Recentemente, percebi que o pessoal de T.I tem uma breve dificuldade em começar a programar, então sempre recomendo a todos, a primeiro entender como funciona a internet e também como funciona HTML, CSS e JavaScript...",
@@ -257,8 +254,7 @@ export class HomeComponent implements OnInit, AfterViewInit{
       types: [
         { id: "1", type_name: "Java" },
         { id: "2", type_name: "Kafka" },
-        { id: "3", type_name: "SpringBoot" },
-        { id: "4", type_name: "MySQL" },
+        { id: "3", type_name: "MySQL" },
       ],
       title: "E-commerce com pagamento",
       description: "Recentemente, percebi que o pessoal de T.I tem uma breve dificuldade em começar a programar, então sempre recomendo a todos, a primeiro entender como funciona a internet e também como funciona HTML, CSS e JavaScript...",
@@ -270,10 +266,7 @@ export class HomeComponent implements OnInit, AfterViewInit{
       types: [
         { id: "1", type_name: "HTML" },
         { id: "2", type_name: "CSS" },
-        { id: "3", type_name: "JavaScript" },
-        { id: "4", type_name: "Vercel" },
-        { id: "5", type_name: "Git" },
-        { id: "6", type_name: "GitHub" },
+        { id: "3", type_name: "JavaScript" }
       ],
       title: "Do 0 ao Deploy",
       description: "Recentemente, percebi que o pessoal de T.I tem uma breve dificuldade em começar a programar, então sempre recomendo a todos, a primeiro entender como funciona a internet e também como funciona HTML, CSS e JavaScript...",
