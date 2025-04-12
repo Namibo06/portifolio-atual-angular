@@ -14,6 +14,7 @@
                 <button type="button" [ngClass]="stepActive === 'blog' ? 'actived__step' : ''"  (click)="activeStep('blog')" title="Blog">BLOG</button>
                 <button type="button" [ngClass]="stepActive === 'project' ? 'actived__step' : ''"  (click)="activeStep('project')" title="Projetos">PROJETOS</button>
                 <button type="button" [ngClass]="stepActive === 'tiktok' ? 'actived__step' : ''"  (click)="activeStep('tiktok')" title="TikTok">TIKTOK</button>
+                <button type="button" [ngClass]="stepActive === 'apresentation' ? 'actived__step' : ''"  (click)="activeStep('apresentation')" title="TikTok">APRESENTAÇÕES</button>
             </section><!--home__steps-->
 
             <section class="home__search">
@@ -67,6 +68,15 @@
                     <div class="home__project__template__articles">
                         <article class="home__article__single" *ngFor="let video of tiktok">
                             <app-card-tiktok-template [dataApi]="video"></app-card-tiktok-template>
+                        </article><!--home__article__single-->
+                    </div><!--home__project__template__articles-->
+                </section><!--home__tiktok__template-->
+
+                <section class="home__tiktok__template" #templateApresentation id="templateApresentation">
+                    <h2>MINHAS APRESENTAÇÕES</h2>
+                    <div class="home__project__template__articles">
+                        <article class="home__article__single" *ngFor="let apresentation of apresentations">
+                            <app-card-tiktok-template [dataApi]="apresentation"></app-card-tiktok-template>
                         </article><!--home__article__single-->
                     </div><!--home__project__template__articles-->
                 </section><!--home__tiktok__template-->

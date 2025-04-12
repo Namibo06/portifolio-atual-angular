@@ -12,6 +12,7 @@ export class HomeComponent implements OnInit, AfterViewInit{
   @ViewChild('templateBlog') templateBlog!:ElementRef;
   @ViewChild('templateProject') templateProject!:ElementRef;
   @ViewChild('templateTiktok') templateTiktok!:ElementRef;
+  @ViewChild('templateApresentation') templateApresentation!:ElementRef;
 
   /*search*/
   searchContent: string = "";
@@ -59,21 +60,31 @@ export class HomeComponent implements OnInit, AfterViewInit{
       this.templateBlog.nativeElement.style.display = "none";
       this.templateProject.nativeElement.style.display = "none";
       this.templateTiktok.nativeElement.style.display = "none";
+      this.templateApresentation.nativeElement.style.display = "none";
     } else if(step === "blog"){
       this.templateAll.nativeElement.style.display = "none";
       this.templateBlog.nativeElement.style.display = "block";
       this.templateProject.nativeElement.style.display = "none";
       this.templateTiktok.nativeElement.style.display = "none";
+      this.templateApresentation.nativeElement.style.display = "none";
     } else if(step === "project"){
       this.templateAll.nativeElement.style.display = "none";
       this.templateBlog.nativeElement.style.display = "none";
       this.templateProject.nativeElement.style.display = "block";
       this.templateTiktok.nativeElement.style.display = "none";
+      this.templateApresentation.nativeElement.style.display = "none";
     } else if(step === "tiktok"){
       this.templateAll.nativeElement.style.display = "none";
       this.templateBlog.nativeElement.style.display = "none";
       this.templateProject.nativeElement.style.display = "none";
       this.templateTiktok.nativeElement.style.display = "block";
+      this.templateApresentation.nativeElement.style.display = "none";
+    } else if(step === "apresentation"){
+      this.templateAll.nativeElement.style.display = "none";
+      this.templateBlog.nativeElement.style.display = "none";
+      this.templateProject.nativeElement.style.display = "none";
+      this.templateTiktok.nativeElement.style.display = "none";
+      this.templateApresentation.nativeElement.style.display = "block";
     }
   }
 
@@ -253,6 +264,21 @@ export class HomeComponent implements OnInit, AfterViewInit{
       description: "Recentemente, percebi que o pessoal de T.I tem uma breve dificuldade em começar a programar, então sempre recomendo a todos, a primeiro entender como funciona a internet e também como funciona HTML, CSS e JavaScript...",
       nameToPost: "Ver projeto"
     },
+    {
+      id: "3",
+      image_url: "barbx.jpg",
+      types: [
+        { id: "1", type_name: "HTML" },
+        { id: "2", type_name: "CSS" },
+        { id: "3", type_name: "JavaScript" },
+        { id: "4", type_name: "Vercel" },
+        { id: "5", type_name: "Git" },
+        { id: "6", type_name: "GitHub" },
+      ],
+      title: "Do 0 ao Deploy",
+      description: "Recentemente, percebi que o pessoal de T.I tem uma breve dificuldade em começar a programar, então sempre recomendo a todos, a primeiro entender como funciona a internet e também como funciona HTML, CSS e JavaScript...",
+      nameToPost: "Ver projeto"
+    },
   ];
 
   tiktok = [
@@ -269,4 +295,17 @@ export class HomeComponent implements OnInit, AfterViewInit{
       nameToPost: "Ver video"
     }
   ];
+
+  apresentations = [
+    {
+      id: "1",
+      image_url: "setup.png",
+      types: [
+        { id: "1", type_name: "PHP" },
+      ],
+      title: "Oficina PHP do Zero",
+      description: "Recentemente, percebi que o pessoal de T.I tem uma breve dificuldade em começar a programar, então sempre recomendo a todos, a primeiro entender como funciona a internet e também como funciona HTML, CSS e JavaScript...",
+      nameToPost: "Ver apresentação"
+    },
+  ]
 }
