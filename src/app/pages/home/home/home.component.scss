@@ -71,7 +71,7 @@ main > aside{
     border: 1px solid #0066ff;
 }
 
-.home__search > svg{
+/*.home__search > svg{
     position: absolute;
     right: 60px;
     top: 5px;
@@ -80,7 +80,7 @@ main > aside{
 
 .home__search > svg:active{
     top: 6px;
-}
+}*/
 
 .home__search > p{
     position: absolute;
@@ -144,6 +144,14 @@ main > aside{
     }
 }
 
+@media (width < 1039px) {
+    .home__steps > button{
+        font-size: 18px;
+        font-weight: 700;
+        margin-right: 45px;
+    }
+}
+
 @media (width < 1000px) {
     main{
         flex-direction: column;
@@ -156,14 +164,139 @@ main > aside{
     }
 }
 
+@media (width < 734px) {
+    .home__steps{
+        padding: 0 30px;
+    }
+
+    .home__steps > button{
+        font-size: 16px;
+        margin-right: 35px;
+    }
+}
+
+@media (width < 589px) {
+    .home__steps > button{
+        font-size: 14px;
+        margin-right: 30px;
+    }
+}
+
+@media (width < 524px) {
+    .home__steps{
+        padding: 0 15px;
+    }
+
+    .home__steps > button{
+        font-size: 12px;
+        margin-right: 20px;
+    }
+
+    /*home search*/
+    .home__search{
+        margin: 50px 0;
+        padding: 0 15px;
+    }
+
+    .home__search > input{
+        max-width: 100%;
+        height: 35px;
+        font-size: 14px;
+    }
+
+    .home__search > p{
+        left: 50px;
+        font-size: 14px;
+    }
+    
+    .home__search > p > i {
+        font-size: 14px;
+    }
+}
+
 @media (width < 425px) {
     main{
         padding: 0 10px;
+    }
+
+    .home__search > p{
+        left: 30px;
+    }
+}
+
+@media (width < 399px) {
+    .home__steps{
+        padding: 0 10px;
+    }
+
+    .home__steps > button{
+        font-size: 11px;
+        margin-right: 17px;
+    }
+
+    /*home search*/
+    .home__search{
+        margin: 40px 0;
+        padding: 0 10px;
+    }
+
+    .home__search > input{
+        height: 32px;
+        font-size: 11px;
+    }
+
+    .home__search > p{
+        bottom: -30px;
+        left: 25px;
+        font-size: 11px;
+    }
+    
+    .home__search > p > i {
+        font-size: 11px;
+    }
+}
+
+@media (width < 355px) {
+    .home__steps{
+        padding: 0 5px;
+    }
+
+    .home__steps > button{
+        font-size: 10px;
+        margin-right: 15px;
+    }
+
+    /*home search*/
+    .home__search{
+        margin: 30px 0;
+        padding: 0 5px;
+    }
+
+    .home__search > input{
+        height: 30px;
+        font-size: 10px;
     }
 }
 
 @media (width < 352px) {
     main{
         padding: 0 5px;
+    }
+}
+
+@media (width < 305px) {
+    .home__steps > button{
+        font-size: 9px;
+        margin-right: 14px;
+    }
+
+    /*home search*/
+    .home__search > p{
+        left: 20px;
+        font-size: 9px;
+    }
+    
+    .home__search > p > i {
+        font-size: 9px;
     }
 }
