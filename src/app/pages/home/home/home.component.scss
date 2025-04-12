@@ -17,8 +17,8 @@ main > aside{
     position: relative;
     top: 20px;
     background-color: #f8f8f8;
-    height: 80.5vh;
     width: 270px;
+    min-width: 270px;
     height: 670px;
     border: 1px solid #a39999;
     border-radius: 20px;
@@ -134,4 +134,30 @@ main > aside{
 
 .home__article__single:last-child{
     margin-bottom: 0px;
+}
+
+@media (width < 1169px) {
+    main > aside{
+        width: 240px;
+        min-width: 240px;
+        height: 670px;
+    }
+}
+
+@media (width < 1000px) {
+    main{
+        flex-direction: column;
+    }
+
+    main > aside{
+        width: 100%;
+        min-width: auto;
+        height: 240px;
+    }
+}
+
+@media (width < 425px) {
+    main{
+        padding: 0 10px;
+    }
 }
