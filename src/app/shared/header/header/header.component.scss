@@ -39,19 +39,202 @@
 }
 
 .header__container nav > a > button{
-    width: 137px;
+    width: 120px;
     height: 45px;
     border: 0;
     border-radius: 5px;
-    font-size: 19px;
-    font-weight: bolder;
-    letter-spacing: 1%;
-    margin-right: 10px;
+    font-size: 17px;
+    font-weight: 700;
+    letter-spacing: 0.3px;
+  
     background-color: transparent;
     cursor: pointer;
     color: #222222;
+    text-align: center;
 }
 
-.header__container nav > a > button:last-child{
+.header__container nav > a:last-child > button{
     margin-right: 0;
+}
+
+.header__templates{
+    display: none;
+}
+
+@media (width < 1150px) {
+   /*header container*/
+    .header__container{
+        padding: 40px 20px;
+    }
+
+    .header__logo > h1,
+    .header__work > h2{
+        font-size: 21px;
+        letter-spacing: 0.3px;
+    }
+
+    .header__work{
+        margin: 0px 30px;
+    }
+}
+
+@media (width < 970px) {
+    /*header container*/
+    .header__container{
+        padding: 40px 15px;
+    }
+
+    .header__logo > h1,
+    .header__work > h2{
+        font-size: 19px;
+        letter-spacing: 0.1px;
+    }
+
+    .header__work{
+        margin: 0px 20px;
+    }
+
+    .header__container nav > a > button{
+        width: 100px;
+        height: 40px;
+        font-size: 15px;
+        font-weight: 700;
+        letter-spacing: 0.1px;
+        margin-right: 0px;
+    } 
+}
+
+@media (width < 820px) {
+    /*header container*/
+    .header__container{
+        padding: 30px 10px;
+    }
+
+    .header__logo > h1,
+    .header__work > h2{
+        font-size: 16px;
+        letter-spacing: 0px;
+    }
+
+    .header__work{
+        margin: 0px 10px;
+    }
+
+    .header__container nav > a > button{
+        width: 90px;
+        height: 25px;
+        font-size: 13px;
+        font-weight: 600;
+        letter-spacing: 0px;
+    } 
+}
+
+@media (width < 760px) {
+    /*header container*/
+    .header__container{
+        padding: 0px 20px;
+        height: 150px;
+        position: relative;
+    }
+    
+    .header__logo{
+        position: absolute;
+        top: 35px;
+        left: 20px;
+    }
+
+    .header__work > h2{
+        padding-top: 1.5px;
+    }
+
+    .header__work{
+        position: absolute;
+        top: 35px;
+        right: 20px;
+    }
+
+    .header__container > nav{
+        position: absolute;
+        bottom: 35px;
+        right: 20px;
+    }
+}
+
+@media (width < 420px) {
+    .header__container{
+        height: 200px;
+    }
+
+    .header__container > nav{
+        bottom: 20px;
+        right: 50%;
+        transform: translateX(60%);
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        width: 90%;
+        gap: 10px;
+    }
+
+    .header__container nav > a{
+        width: 90px;
+        height: 40px;
+    }
+
+    .header__container nav > a > button{
+        height: 20px;
+    } 
+}
+
+@media (width < 360px) {
+    .header__container{
+        padding: 0 10px;
+        height: 185px;
+    }
+
+    .header__logo > h1,
+    .header__work > h2{
+        font-size: 13px;
+    }
+
+    .header__container > nav{
+        transform: translateX(57%);
+        width: 98%;
+    }
+
+    .header__container nav > a{
+        max-width: 90px;
+        height: 35px;
+        padding: 5.5px 0;
+    }
+
+    .header__container nav > a > button{
+        height: auto;
+        font-size: 11px;   
+    } 
+}
+
+@media (width < 320px) {
+    .header__logo > h1,
+    .header__work > h2{
+        font-size: 11px;
+    }
+
+    .header__container{
+        height: 170px;
+    }
+
+    .header__container > nav{
+        transform: translateX(55%);
+        width: 95%;
+    }
+
+    .header__container nav > a{
+        height: 30px;
+        padding: 4px 0;
+    }
+
+    .header__container nav > a > button{
+        height: auto;
+        font-size: 10px;   
+    } 
 }
