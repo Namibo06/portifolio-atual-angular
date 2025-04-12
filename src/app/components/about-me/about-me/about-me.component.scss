@@ -142,13 +142,29 @@
         padding: 0 5px 0 8px;
     }
     
+    .about__me__container > .home__social__media{
+        flex-direction: column;
+        justify-content: center;
+        position: absolute;
+        bottom: 0px;
+        margin-top: 80px;
+        height: 150px;
+    }
+    
     .about__me__container > .home__social__media > a:nth-of-type(1) > svg{
-        width: 30px !important;
+        width: 25px !important;
+        height: 25px !important;
+        margin-bottom: 5px;
+    }
+
+    .about__me__container > .home__social__media > a:nth-of-type(2) > svg{
+        margin-bottom: 5px;
     }
 
     .about__me__container > .home__social__media > a:nth-of-type(2) > svg,
     .about__me__container > .home__social__media > a:nth-of-type(3) > svg{
-        width: 35px !important;
+        width: 30px !important;
+        height: 30px !important;
     }
 }
 
@@ -166,28 +182,7 @@
     }
 
     .about__me__container > .home__social__media{
-        flex-direction: column;
-        justify-content: center;
-        position: absolute;
-        bottom: 0px;
         margin-top: 70px;
-        height: 150px;
-    }
-    
-    .about__me__container > .home__social__media > a:nth-of-type(1) > svg{
-        width: 25px !important;
-        height: 25px !important;
-        margin-bottom: 10px;
-    }
-
-    .about__me__container > .home__social__media > a:nth-of-type(2) > svg{
-        margin-bottom: 10px;
-    }
-
-    .about__me__container > .home__social__media > a:nth-of-type(2) > svg,
-    .about__me__container > .home__social__media > a:nth-of-type(3) > svg{
-        width: 30px !important;
-        height: 30px !important;
     }
 }
 
@@ -202,30 +197,5 @@
         font-size: 9px;
         line-height: 16px;
         padding: 0 3px 0 5px;
-    }
-
-    .about__me__container > .home__social__media{
-        flex-direction: column;
-        justify-content: center;
-        position: absolute;
-        bottom: 0px;
-        margin-top: 70px;
-        height: 150px;
-    }
-    
-    .about__me__container > .home__social__media > a:nth-of-type(1) > svg{
-        width: 25px !important;
-        height: 25px !important;
-        margin-bottom: 10px;
-    }
-
-    .about__me__container > .home__social__media > a:nth-of-type(2) > svg{
-        margin-bottom: 10px;
-    }
-
-    .about__me__container > .home__social__media > a:nth-of-type(2) > svg,
-    .about__me__container > .home__social__media > a:nth-of-type(3) > svg{
-        width: 30px !important;
-        height: 30px !important;
     }
 }
