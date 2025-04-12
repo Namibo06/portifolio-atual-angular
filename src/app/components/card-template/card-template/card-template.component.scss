@@ -100,3 +100,284 @@
     position: relative;
     top: 1px;
 }
+
+@media (width < 1309px) {
+    .card__template__container > picture{
+        min-width: 320px;
+        max-width: 320px;
+    }
+    
+    .card__tiktok__overlay_img{
+        width: 320px;
+    }
+    
+    .home__article__single__content{
+        padding: 15px;
+    }
+    
+    .article__type > p{
+        font-size: 13px;
+        font-weight: 500;
+    }
+    
+    .home__article__single__content > h2{
+        font-size: 16px;
+        letter-spacing: 0.3px;
+    }
+    
+    .home__article__single__content > p{
+        font-size: 13px;
+    }
+    
+    .btn__read__more > h4{
+        font-size: 15px;
+    }
+}
+
+@media (width < 1169px) {
+    .card__template__container > picture{
+        min-width: 320px;
+        max-width: 320px;
+    }
+    
+    .card__tiktok__overlay_img{
+        width: 320px;
+    }
+    
+    .home__article__single__content{
+        padding: 15px;
+    }
+    
+    .article__type > p{
+        font-size: 13px;
+        font-weight: 500;
+    }
+    
+    .home__article__single__content > h2{
+        font-size: 16px;
+        letter-spacing: 0.3px;
+    }
+    
+    .home__article__single__content > p{
+        font-size: 13px;
+    }
+    
+    .btn__read__more > h4{
+        font-size: 15px;
+    }
+}
+
+@media (width < 1139px) {
+    .card__template__container > picture{
+        min-width: 300px;
+        max-width: 300px;
+    }
+    
+    .card__tiktok__overlay_img{
+        width: 300px;
+    }
+    
+    .home__article__single__content{
+        padding: 15px 10px;
+    }
+    
+    .article__type > p{
+        font-size: 12px;
+    }
+    
+    .home__article__single__content > h2{
+        font-size: 13px;
+    }
+    
+    .home__article__single__content > p{
+        font-size: 12px;
+    }
+    
+    .btn__read__more > h4{
+        font-size: 13px;
+    }
+}
+
+@media (width < 1064px) {
+    .card__template__container > picture{
+        min-width: 280px;
+        max-width: 280px;
+    }
+    
+    .card__tiktok__overlay_img{
+        width: 280px;
+    }
+    
+    .article__type > p{
+        font-size: 11px;
+    }
+    
+    .home__article__single__content > h2{
+        font-size: 12px;
+    }
+    
+    .home__article__single__content > p{
+        font-size: 10px;
+    }
+    
+    .btn__read__more > h4{
+        font-size: 12px;
+    }
+}
+
+@media (width < 640px) {
+    .card__template__container > picture{
+        min-width: 240px;
+        max-width: 240px;
+    }
+    
+    .card__tiktok__overlay_img{
+        width: 240px;
+    }
+    
+    .article__type > p{
+        font-size: 10px;
+    }
+    
+    .home__article__single__content > h2{
+        font-size: 11px;
+    }
+    
+    .home__article__single__content > p{
+        font-size: 9px;
+    }
+    
+    .btn__read__more > h4{
+        font-size: 11px;
+    }
+
+    .btn__read__more > svg{
+        width: 20px;
+        height: 20px;
+    }
+}
+
+@media (width < 580px) {
+    .card__template__container{
+        flex-direction: column;
+        height: 450px;
+    }
+
+    .card__template__container > picture{
+        min-width: 100%;
+        max-width: 100%;
+        height: 200px;
+    }
+
+    .card__template__container > picture > img{
+        border-right: 0;
+    }
+    
+    .card__tiktok__overlay_img{
+        width: 100%;
+        height: 212px;
+    }
+    
+    .article__type > p{
+        font-size: 10px;
+        font-weight: 600;
+    }
+    
+    .home__article__single__content > h2{
+        font-size: 15px;
+    }
+    
+    .home__article__single__content > p{
+        font-size: 13px;
+    }
+
+    .btn__read__more{
+        position: absolute !important;
+        bottom: -50px !important;
+        right: 20px !important;
+        justify-content: right !important;
+    }
+    
+    .btn__read__more > h4{
+        font-size: 11px;
+    }
+
+    .btn__read__more > svg{
+        width: 20px;
+        height: 20px;
+    }
+}
+
+@media (width < 531px) {
+    .btn__read__more{
+        bottom: -30px !important;
+    }
+}
+
+@media (width < 479px) {
+    .btn__read__more{
+        bottom: -20px !important;
+    }
+}
+
+@media (width < 415px) {
+    .article__type > p{
+        font-size: 9px;
+    }
+    
+    .home__article__single__content > h2{
+        font-size: 13px;
+    }
+    
+    .home__article__single__content > p{
+        font-size: 11px;
+    }
+
+    .btn__read__more{
+        bottom: -35px !important;
+    }
+}
+
+@media (width < 414px) {
+    .btn__read__more{
+        bottom: -25px !important;
+    }
+}
+
+@media (width < 358px) {
+    .home__article__single__content > h2{
+        font-size: 11px;
+    }
+    
+    .home__article__single__content > p{
+        font-size: 9px;
+    }
+
+    .btn__read__more{
+        bottom: -25px !important;
+    }
+
+    .btn__read__more > h4{
+        font-size: 10px;
+    }
+
+    .btn__read__more > svg{
+        width: 17px;
+        height: 17px;
+    }
+}
+
+@media (width < 291px) {
+    .home__article__single__content > h2{
+        font-size: 10px;
+    }
+    
+    .home__article__single__content > p{
+        font-size: 8px;
+        line-height: 16px;
+    }
+
+    .btn__read__more{
+        bottom: -40px !important;
+    }
+}
