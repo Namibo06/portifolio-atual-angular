@@ -1,4 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { faEye, faHeart, faThumbsDown, faThumbsUp, IconDefinition } from '@fortawesome/free-regular-svg-icons';
+import { faShareNodes } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-card-template',
@@ -13,6 +15,13 @@ export class CardTemplateComponent implements OnInit{
   typeNameCard: any = [];
   descriptionCard: string = "";
   namePostCard: string = "";
+
+  /*icons*/
+  likeIcon:IconDefinition = faThumbsUp;
+  unlikeIcon:IconDefinition = faThumbsDown;
+  viewIcon:IconDefinition = faEye;
+  favoriteIcon:IconDefinition = faHeart;
+  shareIcon:IconDefinition = faShareNodes;
 
   ngOnInit(): void {
     this.getAllPosts();

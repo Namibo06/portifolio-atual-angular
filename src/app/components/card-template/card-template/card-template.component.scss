@@ -1,7 +1,7 @@
 .card__template__container{
     border-radius: 5px;
     border: 1px solid #a39999;
-    width: 950px;
+    width: 100%;
     max-width: 99%;
     height: 214px;
     display: flex;
@@ -10,8 +10,7 @@
 }
 
 .card__template__container > picture{
-    min-width: 340px;
-    max-width: 340px;
+    width: 90%;
     min-height: 212px;
     position: relative;
 }
@@ -22,7 +21,7 @@
     left: 0;
     background-color: #05050523;
     border-radius: 5px;
-    width: 340px;
+    width: 100%;
     height: 212px;
 }
 
@@ -77,78 +76,41 @@
     font-size: 14px;
 }
 
-.home__article__single__content > .btn__read__more{
+.home__article__single__actions{
+    width: 100%;
+    max-width: 96%;
+    position: absolute;
+    bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.home__article__single__actions__left{
     display: flex;
     flex-direction: row;
     align-items: center;
-    position: absolute;
-    right: 25px;
-    bottom: 20px;
+}
+
+.home__article__single__actions__left > button{
+    margin-right: 20px;
+    background-color: transparent;
+    border: 0;
+}
+
+.home__article__single__actions__left > button:last-child{
+    margin-right: 0;
+}
+
+.home__article__single__actions__left > button > fa-icon,
+.home__article__single__actions__right > a > fa-icon{
+    font-size: 18px;
     cursor: pointer;
-    text-decoration: none;
-}
-
-.btn__read__more > h4{
-    font-size: 16px;
-    font-weight: 500;
     color: #222;
-    margin-right: 5px;
 }
 
-.btn__read__more > svg{
-    width: 26px;
-    height: 26px;
-    position: relative;
-    top: 1px;
-}
-
-@media (width < 1309px) {
-    .card__template__container > picture{
-        min-width: 320px;
-        max-width: 320px;
-    }
-    
-    .card__tiktok__overlay_img{
-        width: 320px;
-    }
-    
-    .home__article__single__content{
-        padding: 15px;
-    }
-    
-    .article__type > p{
-        font-size: 13px;
-        font-weight: 500;
-    }
-    
-    .home__article__single__content > h2{
-        font-size: 16px;
-        letter-spacing: 0.3px;
-    }
-    
-    .home__article__single__content > p{
-        font-size: 13px;
-    }
-    
-    .btn__read__more > h4{
-        font-size: 15px;
-    }
-}
-
-@media (width < 1169px) {
-    .card__template__container > picture{
-        min-width: 320px;
-        max-width: 320px;
-    }
-    
-    .card__tiktok__overlay_img{
-        width: 320px;
-    }
-    
-    .home__article__single__content{
-        padding: 15px;
-    }
-    
+@media (width < 1309px) {    
     .article__type > p{
         font-size: 13px;
         font-weight: 500;
@@ -169,15 +131,6 @@
 }
 
 @media (width < 1139px) {
-    .card__template__container > picture{
-        min-width: 300px;
-        max-width: 300px;
-    }
-    
-    .card__tiktok__overlay_img{
-        width: 300px;
-    }
-    
     .home__article__single__content{
         padding: 15px 10px;
     }
@@ -199,16 +152,7 @@
     }
 }
 
-@media (width < 1064px) {
-    .card__template__container > picture{
-        min-width: 280px;
-        max-width: 280px;
-    }
-    
-    .card__tiktok__overlay_img{
-        width: 280px;
-    }
-    
+@media (width < 1064px) {   
     .article__type > p{
         font-size: 11px;
     }
@@ -226,27 +170,7 @@
     }
 }
 
-@media (width < 660px) {
-    .card__template__container > picture{
-        min-width: 240px;
-        max-width: 240px;
-    }
-    
-    .card__tiktok__overlay_img{
-        width: 240px;
-    }
-}
-
-@media (width < 640px) {
-    .card__template__container > picture{
-        min-width: 220px;
-        max-width: 220px;
-    }
-    
-    .card__tiktok__overlay_img{
-        width: 220px;
-    }
-    
+@media (width < 640px) {  
     .article__type > p{
         font-size: 10px;
     }
