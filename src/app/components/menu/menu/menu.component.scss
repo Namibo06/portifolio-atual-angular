@@ -1,0 +1,14 @@
+.menu__container{
+    position: relative;
+}
+
+.menu__btn > button{
+    width: 25px;
+    height: 25px;
+    background-color: transparent;
+    border: 0;
+    position: absolute;
+    right: 20px;
+    top: 40px;
+    cursor: pointer;
+}

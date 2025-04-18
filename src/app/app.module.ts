@@ -15,6 +15,7 @@ import { RelevantArticlesModule } from './components/relevant-articles/relevant-
 import { ArticleModule } from './pages/article/article.module';
 import { CreateArticleModule } from './pages/create-article/create-article.module';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { MenuModule } from './components/menu/menu.module';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,8 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     RelevantArticlesModule,
     ArticleModule,
     CreateArticleModule,
-    FontAwesomeModule
+    FontAwesomeModule,
+    MenuModule
   ],
   providers: [],
   bootstrap: [AppComponent]
