@@ -15,13 +15,15 @@ main{
 
 main > aside{
     position: relative;
+    left: -15px;
     top: 20px;
     background-color: #f8f8f8;
-    width: 270px;
-    min-width: 270px;
+    width: 70px;
+    min-width: 70px;
     height: 670px;
     border: 1px solid #dadada;
-    border-radius: 20px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
 }
 
 .home__wrapper{
