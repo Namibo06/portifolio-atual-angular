@@ -27,6 +27,8 @@
 .header__work > h2{
     font-size: 24px;
     letter-spacing: 1%;
+    font-weight: 600;
+    color: #333;
 }
 
 .header__work__theme{
@@ -46,6 +48,7 @@
 .header__theme > button > fa-icon{
     font-size: 30px;
     cursor: pointer;
+    color: #333;
 }
 
 @media (width < 1150px) {
