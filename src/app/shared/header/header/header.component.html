@@ -3,11 +3,19 @@
         <h1 title="Joalisson P. Maia">🚀 Joalisson P. Maia</h1>
     </div><!--header__logo-->
 
-    <div class="header__work">
-        <h2 title="Web Developer">Web Developer</h2>
-    </div><!--header__work-->
+    <div class="header__work__theme">
+        <div class="header__work">
+            <h2 title="Web Developer">Web Developer</h2>
+        </div><!--header__work-->
 
-    <nav>
+        <div class="header__theme">
+            <button type="button" (click)="changeTheme()">
+                <fa-icon [icon]="templateTheme"></fa-icon>
+            </button>
+        </div><!--header__theme-->
+    </div><!--header__work__theme-->
+
+    <!--<nav>
         <a [routerLink]="['/home']" routerLinkActive="active__link__header" (click)="activedLink('home')" title="Rota para Página Principal">
             <button type="button">HOME</button>
         </a>
@@ -23,5 +31,5 @@
         <a [routerLink]="['/sobre']" routerLinkActive="active__link__header" (click)="activedLink('about')" title="Rota para Página Sobre">
             <button type="button">SOBRE</button>
         </a>
-    </nav>
+    </nav>-->
 </div><!--header__container-->
