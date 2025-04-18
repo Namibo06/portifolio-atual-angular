@@ -97,12 +97,9 @@ main > aside{
 
 /*home content*/
 .home__content{
-    margin: 90px 20px 20px 20px;
-    //background-color: #f8f8f8;
-    //border: 1px solid #a39999;
-    border-radius: 20px;
-    width: 1020px;
-    max-width: 95%;
+    margin: 90px 0px 20px 0px;
+    width: 100vw;
+    max-width: 99%;
     height: auto;
     padding: 30px 20px;
 }
@@ -136,14 +133,6 @@ main > aside{
 
 .home__article__single:last-child{
     margin-bottom: 0px;
-}
-
-@media (width < 1169px) {
-    main > aside{
-        width: 240px;
-        min-width: 240px;
-        height: 670px;
-    }
 }
 
 @media (width < 1039px) {
@@ -181,7 +170,7 @@ main > aside{
    /*home content*/
     .home__content{
         margin: 90px 15px 20px 15px;
-        padding: 30px 0px;
+        padding: 30px 10px;
     }
 
     /*home all content*/
