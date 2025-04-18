@@ -14,6 +14,7 @@ import { AboutMeModule } from './components/about-me/about-me.module';
 import { RelevantArticlesModule } from './components/relevant-articles/relevant-articles.module';
 import { ArticleModule } from './pages/article/article.module';
 import { CreateArticleModule } from './pages/create-article/create-article.module';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { CreateArticleModule } from './pages/create-article/create-article.modul
     AboutMeModule,
     RelevantArticlesModule,
     ArticleModule,
-    CreateArticleModule
+    CreateArticleModule,
+    FontAwesomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]
